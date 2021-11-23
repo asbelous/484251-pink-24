@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Алексей Белоусов](https://up.htmlacademy.ru/adaptive/24/user/484251).
-* Наставник: Анастасия Васинская.
+* Наставник: [Анастасия Васинская](https://htmlacademy.ru/profile/vanastasiya).
 
 ---
 

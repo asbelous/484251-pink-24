@@ -42,6 +42,7 @@
         </div>
       </nav>
     </header>
+
     <main class="main-page">
 
       <h1 class="visually-hidden">Мобильное приложение Pink - Конкурс</h1>
@@ -54,6 +55,55 @@
           <p class="intro__description">Поделитесь своей историей и получите
             шанс выиграть ценный приз — 1000
             миль на вашу бонусную карту!</p>
+        </div>
+      </section>
+
+      <section class="form">
+        <div class="form__wrapper">
+          <h2 class="visually-hidden">Заполните форму для участия в конкурсе</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+
+            <fieldset class="form__fio">
+              <p><label>Фамилия:<input type="text" value="Укажите фамилию *" required></label></p>
+              <p><label>Имя:<input type="text" value="Укажите имя *" required></label>
+              </p>
+              <p><label>Отчество:<input type="text" value="Ну и отчество тоже"></label></p>
+            </fieldset>
+
+            <fieldset class="form__achievements">
+              <legend>Ваши безбашенные достижения в путешествии</legend>
+              <p><input type="checkbox" checked> Сделал селфи с акулой</p>
+              <p><input type="checkbox" checked> Обгорел на пляже</p>
+              <p><input type="checkbox"> Видел Чака Норриса</p>
+              <p><input type="checkbox"> Накупил сувениров</p>
+              <p><input type="checkbox" checked> Удержал башню</p>
+              <p><input type="checkbox"> Разгромил отель</p>
+            </fieldset>
+
+            <fieldset class="form__contacts">
+              <legend>Контактная информация</legend>
+              <p><input type="tel" value="Номер, пожалуйста"></p>
+              <p><input type="email" value="Введите почту *" required></p>
+            </fieldset>
+
+            <fieldset class="form__platforms">
+              <legend>С каким приложением путешествовали?</legend>
+              <p><input type="radio" name="platform" checked>Pink для iOS</p>
+              <p><input type="radio" name="platform">Pink на Android</p>
+              <p><input type="radio" name="platform">Windows Phone</p>
+            </fieldset>
+
+            <fieldset class="form__emotions">
+              <legend>Опишите свои эмоции</legend>
+              <textarea cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </fieldset>
+
+            <fieldset class="form__submit">
+              <button type="submit">Отправить форму</button>
+              <p>* — обязательные поля</p>
+            </fieldset>
+
+          </form>
         </div>
       </section>
 

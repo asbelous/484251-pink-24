@@ -63,44 +63,44 @@
           <h2 class="visually-hidden">Заполните форму для участия в конкурсе</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
 
-            <fieldset class="form__fio">
-              <p><label>Фамилия:<input type="text" value="Укажите фамилию *" required></label></p>
-              <p><label>Имя:<input type="text" value="Укажите имя *" required></label>
+            <fieldset class="form__fio fio">
+              <p class="fio__surname"><label>Фамилия:<input type="text" value="Укажите фамилию *" required></label></p>
+              <p class="fio__name"><label>Имя:<input type="text" value="Укажите имя *" required></label>
               </p>
-              <p><label>Отчество:<input type="text" value="Ну и отчество тоже"></label></p>
+              <p class="fio__patronymic"><label>Отчество:<input type="text" value="Ну и отчество тоже"></label></p>
             </fieldset>
 
-            <fieldset class="form__achievements">
+            <fieldset class="form__achievements achievements">
               <legend>Ваши безбашенные достижения в путешествии</legend>
-              <p><input type="checkbox" checked> Сделал селфи с акулой</p>
-              <p><input type="checkbox" checked> Обгорел на пляже</p>
-              <p><input type="checkbox"> Видел Чака Норриса</p>
-              <p><input type="checkbox"> Накупил сувениров</p>
-              <p><input type="checkbox" checked> Удержал башню</p>
-              <p><input type="checkbox"> Разгромил отель</p>
+              <p class="achievements__item"><input type="checkbox" checked> Сделал селфи с акулой</p>
+              <p class="achievements__item"><input type="checkbox" checked> Обгорел на пляже</p>
+              <p class="achievements__item"><input type="checkbox"> Видел Чака Норриса</p>
+              <p class="achievements__item"><input type="checkbox"> Накупил сувениров</p>
+              <p class="achievements__item"><input type="checkbox" checked> Удержал башню</p>
+              <p class="achievements__item"><input type="checkbox"> Разгромил отель</p>
             </fieldset>
 
-            <fieldset class="form__contacts">
+            <fieldset class="form__your-contacts your-contacts">
               <legend>Контактная информация</legend>
-              <p><input type="tel" value="Номер, пожалуйста"></p>
-              <p><input type="email" value="Введите почту *" required></p>
+              <p class="your-contacts__phone"><input type="tel" value="Номер, пожалуйста"></pclass>
+              <p class="your-contacts__email"><input type="email" value="Введите почту *" required></p>
             </fieldset>
 
-            <fieldset class="form__platforms">
+            <fieldset class="form__platforms platforms">
               <legend>С каким приложением путешествовали?</legend>
-              <p><input type="radio" name="platform" checked>Pink для iOS</p>
-              <p><input type="radio" name="platform">Pink на Android</p>
-              <p><input type="radio" name="platform">Windows Phone</p>
+              <p class="platforms__item"><input type="radio" name="platform" checked>Pink для iOS</p>
+              <p class="platforms__item"><input type="radio" name="platform">Pink на Android</p>
+              <p class="platforms__item"><input type="radio" name="platform">Windows Phone</p>
             </fieldset>
 
-            <fieldset class="form__emotions">
+            <fieldset class="form__emotions emotions">
               <legend>Опишите свои эмоции</legend>
-              <textarea cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+              <textarea class="emotions__text" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
             </fieldset>
 
-            <fieldset class="form__submit">
-              <button type="submit">Отправить форму</button>
-              <p>* — обязательные поля</p>
+            <fieldset class="form__submit submit">
+              <button class="submit__button" type="submit">Отправить форму</button>
+              <p class="submit__description">* — обязательные поля</p>
             </fieldset>
 
           </form>

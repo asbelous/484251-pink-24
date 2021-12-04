@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Пинк - Каталог</title>
   </head>
   <body class="page__body">
@@ -19,22 +20,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a>
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a href="catalog.html">
+              <a class="main-nav__link">
                 Фотографии
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">
+              <a class="main-nav__link" href="form.html">
                 Конкурс
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">
+              <a class="main-nav__link" href="https://htmlacademy.ru">
                 HTML Academy
               </a>
             </li>
@@ -63,10 +64,12 @@
             <a class="item__link" href="img/panorama-tablet.jpg">
               <img class="item__photo item__photo--panorama" src="img/panorama-tablet.jpg" width="320" height="137" alt="Фото Анны">
             </a>
-            <b class="item__name">Анна</b>
-            <span class="item__time-ago">5 минут назад</span>
-            <p class="item__post">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="item__like">Нравится: 215</p>
+            <div class="item__info">
+              <b class="item__name">Анна</b>
+              <span class="item__time-ago">(5 минут назад)</span>
+              <p class="item__post">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="item__like">Нравится: 215</p>
+            </div>
           </div>
 
           <ul class="catalog__list">
@@ -74,60 +77,72 @@
               <a class="item__link" href="img/photo-1-mobile.jpg">
                 <img class="item__photo" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Фото Левона">
               </a>
-              <b class="item__name">Левон</b>
-              <span class="item__time-ago">5 часов назад</span>
-              <p class="item__post">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="item__like">Нравится: 356</p>
+              <div class="item__info">
+                <b class="item__name">Левон</b>
+                <span class="item__time-ago">(5 часов назад)</span>
+                <p class="item__post">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <p class="item__like">Нравится: 356</p>
+              </div>
             </li>
 
             <li class="catalog__item item">
               <a class="item__link" href="img/photo-2-mobile.jpg">
                 <img class="item__photo" src="img/photo-2-mobile.jpg" width="280" height="180" alt="Фото Антона">
               </a>
-              <b class="item__name">Антон</b>
-              <span class="item__time-ago">12 часов назад</span>
-              <p class="item__post">Соседи будут рады!</p>
-              <p class="item__like">Нравится: 666</p>
+              <div class="item__info">
+                <b class="item__name">Антон</b>
+                <span class="item__time-ago">(12 часов назад)</span>
+                <p class="item__post">Соседи будут рады!</p>
+                <p class="item__like">Нравится: 666</p>
+              </div>
             </li>
 
             <li class="catalog__item item">
               <a class="item__link" href="img/photo-3-tablet.jpg">
                 <img class="item__photo"src="img/photo-3-tablet.jpg" width="280" height="180" alt="Фото Бориса">
               </a>
-              <b class="item__name">Борис</b>
-              <span class="item__time-ago">20 часов назад</span>
-              <p class="item__post">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="item__like">Нравится: 215</p>
+              <div class="item__info">
+                <b class="item__name">Борис</b>
+                <span class="item__time-ago">(20 часов назад)</span>
+                <p class="item__post">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <p class="item__like">Нравится: 215</p>
+              </div>
             </li>
 
             <li class="catalog__item item">
               <a class="item__link" href="img/photo-4-tablet.jpg">
                 <img class="item__photo"src="img/photo-4-tablet.jpg" width="280" height="180" alt="Фото Сергея">
               </a>
-              <b class="item__name">Сергей</b>
-              <span class="item__time-ago">25 часов назад</span>
-              <p class="item__post">Самая кубанская в мире!</p>
-              <p class="item__like">Нравится: 4</p>
+              <div class="item__info">
+                <b class="item__name">Сергей</b>
+                <span class="item__time-ago">(25 часов назад)</span>
+                <p class="item__post">Самая кубанская в мире!</p>
+                <p class="item__like">Нравится: 4</p>
+              </div>
             </li>
 
             <li class="catalog__item item">
               <a class="item__link" href="img/photo-5-tablet.jpg">
                 <img class="item__photo"src="img/photo-5-tablet.jpg" width="280" height="180" alt="Фото Максима">
               </a>
-              <b class="item__name">Максим</b>
-              <span class="item__time-ago">40 часов назад</span>
-              <p class="item__post">Где снег-то?</p>
-              <p class="item__like">Нравится: 150</p>
+              <div class="item__info">
+                <b class="item__name">Максим</b>
+                <span class="item__time-ago">(40 часов назад)</span>
+                <p class="item__post">Где снег-то?</p>
+                <p class="item__like">Нравится: 150</p>
+              </div>
             </li>
 
             <li class="catalog__item item">
               <a class="item__link" href="img/photo-6-tablet.jpg">
                 <img class="item__photo"src="img/photo-6-tablet.jpg" width="280" height="180" alt="Фото Надежды">
               </a>
-              <b class="item__name">Надежда</b>
-              <span class="item__time-ago">45 часов назад</span>
-              <p class="item__post">Всем GM и взаимные лайки!</p>
-              <p class="item__like">Нравится: 2560</p>
+              <div class="item__info">
+                <b class="item__name">Надежда</b>
+                <span class="item__time-ago">(45 часов назад)</span>
+                <p class="item__post">Всем GM и взаимные лайки!</p>
+                <p class="item__like">Нравится: 2560</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -137,13 +152,11 @@
         <div class="upload__wrapper">
           <h2 class="visually-hidden">Редактор фотографий</h2>
           <p class="upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-          <a class="upload__photo-link" href="img/photo-7-tablet.jpg">
-            <img class="upload__photo" src="img/photo-7-tablet.jpg" width="280" height="374" alt="Фото для редактирования">
-          </a>
-          <div class="upload__editor-tools editor-tool">
-            <button class="editor-tool__crop editor-tool__crop--active"></button>
-            <button class="editor-tool__fill"></button>
-            <button class="editor-tool__contrast"></button>
+          <img class="upload__photo" src="img/photo-7-tablet.jpg" width="280" height="374" alt="Фото для редактирования">
+          <div class="upload__editor-tools editor-tools">
+            <button class="editor-tools__tool editor-tools__tool--active"></button>
+            <button class="editor-tools__tool"></button>
+            <button class="editor-tools__tool"></button>
             <div class="editor-tool__range"></div>
           </div>
           <div class="upload__buttons">

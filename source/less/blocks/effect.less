@@ -1,0 +1,45 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+  }
+
+  .effect__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .effect__img {
+    margin-left: 20px;
+    margin-top: 54px;
+  }
+
+  .effect__info {
+    margin-top: 102px;
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: @lightgrey;
+    padding-bottom: 67px;
+  }
+  .effect__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .effect__img {
+    margin-left: 131px;
+    margin-top: 54px;
+  }
+
+  .effect__info {
+    margin-top: 102px;
+    order: 2;
+  }
+}

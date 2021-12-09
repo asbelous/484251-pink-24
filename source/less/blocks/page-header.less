@@ -1,7 +1,58 @@
 .page-header {
-  background: rgba(0, 0, 0, 0.3) url("../img/back-mobile.jpg") no-repeat;
+  min-height: 66px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
 }
 
-// .main-nav__list {
-//   visibility: hidden;
-// }
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+  padding: 0 20px;
+}
+
+.page-header__logo {
+  color: #ffffff;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.page-header__toggle {
+  width: 50px;
+  height: 24px;
+  outline: 5px solid rgba(0, 0, 255, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    min-height: 110px;
+  }
+
+  .page-header__logo {
+    width: 145px;
+    height: 40px;
+  }
+
+  .page-header__toggle {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    display: flex;
+    height: 110px;
+  }
+
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}

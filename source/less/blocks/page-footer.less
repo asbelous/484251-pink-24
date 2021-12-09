@@ -1,4 +1,31 @@
 .page-footer__wrapper {
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
+}
+
+.page-footer__logo {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.page-footer__social {
+  width: 172px;
+  height: 48px;
+  outline: 5px solid rgba(0, 0, 255, 0.8);
+  outline-offset: -5px;
+}
+
+.page-footer__copyright {
+  width: 130px;
+  height: 34px;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

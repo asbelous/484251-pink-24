@@ -1,13 +1,23 @@
 .intro {
-  background-color: #1d2631;
+  background-color: @sapphire;
+  background-image: url("../img/back-mobile.jpg") no-repeat center center fixed;
 }
 
 .intro__wrapper {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
 }
 
+.intro__header {
+  min-height: 396px;
+  padding-top: 66px;
+}
+
 .intro__title {
+  width: 280px;
+  margin: 0;
+  margin-top: -36px;
+  padding: 0 20px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -19,16 +29,38 @@
   line-height: 29px;
 }
 
+.intro__download {
+  background-color: #1d2631;
+  padding-bottom: 38px;
+}
+
 .intro__download-button {
+  width: 280px;
+  height: 55px;
+  margin: 28px 20px 0 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   text-align: center;
   color: #ffffff;
   background-color: #1d2631;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+}
+
+.intro__available-platforms {
+  width: 204px;
+  height: 56px;
+  margin: 32px 58px 0 58px;
+  padding: 0;
+  list-style: none;
+  outline: 5px solid rgba(0, 0, 255, 0.8);
+  outline-offset: -5px;
 }
 
 .intro__download-description {
+  width: 280px;
+  margin: 28px 20px 0 20px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -39,4 +71,42 @@
 .intro__description {
   line-height: 30px;
   background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .intro__wrapper {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  .intro__header {
+    min-height: 0;
+    padding-top: 102px;
+  }
+
+  .intro__title {
+    width: 230px;
+    font-size: 40px;
+    line-height: 48px;
+    margin: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__wrapper {
+    width: 300px;
+    margin-left: 130px;
+  }
+
+  .intro__header {
+    min-height: 0;
+    padding-top: 176px;
+  }
+
+  .intro__title {
+    width: 300px;
+    font-size: 50px;
+    line-height: 68px;
+    margin: auto;
+  }
 }

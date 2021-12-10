@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+.form__form {
+  margin: 0;
+  padding: 0;
+}
+
 .form__legend {
   font-weight: 400;
   font-size: 14px;
@@ -10,10 +15,10 @@
   text-align: center;
   text-transform: uppercase;
   color: #d22856;
-}
 
-.form__legend--nonvisible {
-  display: none;
+  &--nonvisible {
+    display: none;
+  }
 }
 
 .form__label {
@@ -54,8 +59,79 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form__wrapper {
+  .form__form {
     display: flex;
     flex-direction: column;
+  }
+
+  .form__fio {
+    order: 1;
+  }
+
+  .form__platforms {
+    order: 2;
+  }
+
+  .form__your-contacts {
+    order: 3;
+  }
+
+  .form__achievements {
+    order: 4;
+  }
+
+  .form__emotions {
+    order: 5;
+  }
+
+  .form__submit {
+    order: 6;
+  }
+
+  .form__legend--nonvisible {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    width: 100%;
+    padding: 0 132px;
+  }
+
+  .form__form {
+    display: grid;
+    grid-template-areas:
+      "fio platforms"
+      "contacts contacts"
+      "achievements achievements"
+      "emotions emotions"
+      "submit submit";
+    grid-template-rows: 1fr 1fr;
+    min-width: 936px;
+  }
+
+  .form__fio {
+    grid-area: fio;
+  }
+
+  .form__platforms {
+    grid-area: platforms;
+  }
+
+  .form__your-contacts {
+    grid-area: contacts;
+  }
+
+  .form__achievements {
+    grid-area: achievements;
+  }
+
+  .form__emotions {
+    grid-area: emotions;
+  }
+
+  .form__submit {
+    grid-area: submit;
   }
 }

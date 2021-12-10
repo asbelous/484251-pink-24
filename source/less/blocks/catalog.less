@@ -1,8 +1,35 @@
 .catalog__wrapper {
-  width: 280px;
+  min-width: 280px;
   margin: 0 auto;
 }
 
 .catalog__item {
   margin-top: 20px;
+}
+
+.item--panorama {
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  .catalog__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 940px;
+  }
 }

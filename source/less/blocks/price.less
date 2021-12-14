@@ -1,4 +1,6 @@
 .price {
+  padding-top: 81px;
+  padding-bottom: 46px;
   background-color: #f2f2f2;
 }
 
@@ -7,8 +9,19 @@
   margin: 0 auto;
 }
 
+.price__table {
+  border-collapse: collapse;
+}
+
 .price__tarif {
-  background-color: #283645;
+  min-width: 276px;
+  height: 94px;
+  border: 2px solid #f2f2f2;
+  background-color: @darkgrey;
+
+  &--opacity {
+    opacity: 0;
+  }
 }
 
 .price__name {
@@ -30,10 +43,23 @@
 }
 
 .price__table-option {
+  min-height: 59px;
   font-weight: 400;
+  padding: 15px 0 15px 20px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #283645;
+  border: 2px solid #e5e5e5;
+  color: @darkgrey;
   background-color: #ffffff;
+}
+
+.price__table-option--first-row {
+  text-transform: none;
+}
+
+.price__toggles {
+  width: 56px;
+  margin: 0 auto;
+  margin-top: 42px;
 }

@@ -1,15 +1,15 @@
+.contacts {
+  padding-top: 48px;
+}
+
 .contacts__wrapper {
   width: 280px;
   margin: 0 auto;
 }
 
-.contacts__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
 .contacts__text {
+  margin: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -17,13 +17,37 @@
   color: @darkgrey;
 }
 
-.contacts__item-text {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  color: @darkgrey;
+.contacts__list {
+  margin: 0;
+  margin-top: 37px;
+  padding: 0;
+  padding-bottom: 36px;
+  list-style: none;
 }
+
+.contacts__item {
+  p {
+    margin: 0;
+    text-align: center;
+  }
+
+  &-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: @darkgrey;
+  }
+
+  &:nth-child(2) {
+    margin-top: 17px;
+  }
+
+  &:last-child {
+    margin-top: 21px;
+  }
+}
+
 
 .contacts__name {
   font-weight: 300;

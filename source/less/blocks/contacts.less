@@ -3,7 +3,7 @@
 }
 
 .contacts__wrapper {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -56,10 +56,23 @@
   text-align: center;
   text-decoration: none;
   color: @pink;
+
+  &:last-child {
+    width: 280px;
+    margin: 0 auto;
+  }
 }
 
-.contacts__map {
+// .contacts__map {
+//   margin: 0 auto;
+// }
+
+.contacts iframe {
+  border: none;
+  display: block;
+  min-width: 320px;
   margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {

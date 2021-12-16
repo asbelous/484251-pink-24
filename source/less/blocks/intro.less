@@ -45,7 +45,7 @@
     line-height: 18px;
     text-align: center;
     color: #ffffff;
-    background-color: #1d2631;
+    background-color: transparent;
     border: 3px solid #ffffff;
     border-radius: 29px;
 
@@ -94,13 +94,9 @@
 
 @media (min-width: @tablet-width) {
   .intro {
-    // min-height: 330px;
-    background:
-      url("../img/phone-tablet.png") right bottom no-repeat,
-      url("../img/screen-tablet.png") 70% 271px no-repeat,
-      url("../img/back-tablet.jpg") center bottom no-repeat;
+    background: url("../img/background-tablet.jpg") center bottom no-repeat;
     background-color: @sapphire;
-    background-size: 660px 545px, 195px 346px, cover;
+    background-size: cover;
   }
 
   .intro__wrapper {
@@ -148,12 +144,8 @@
 
 @media (min-width: @desktop-width) {
   .intro {
-    // min-height: 284px;
-    background:
-      url("../img/phone-desktop.png") right bottom no-repeat,
-      url("../img/screen-desktop.png") 70% 271px no-repeat,
-      url("../img/back-desktop.jpg") center bottom no-repeat;
-    background-size: 1050px 645px, 230px 408px, cover;
+    background: url("../img/background-desktop.jpg") center bottom no-repeat;
+    background-size: cover;
   }
 
   .intro__wrapper {

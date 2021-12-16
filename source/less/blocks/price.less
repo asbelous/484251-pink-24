@@ -11,6 +11,7 @@
 
 .price__table {
   border-collapse: collapse;
+  margin-left: -540px;
 }
 
 .price__tarif {
@@ -42,7 +43,9 @@
   color: #ffffff;
 }
 
-.price__table-option {
+.price__option {
+  // display: flex;
+  // position: relative;
   min-height: 59px;
   font-weight: 400;
   padding: 15px 0 15px 20px;
@@ -52,14 +55,51 @@
   border: 2px solid #e5e5e5;
   color: @darkgrey;
   background-color: #ffffff;
-}
 
-.price__table-option--first-row {
-  text-transform: none;
+  &--first-row {
+    text-transform: none;
+  }
+
+  &--enabled .price__img{
+    display: inline-block;
+    width: 31px;
+    height: 21px;
+    background-image: url(../img/yes.svg);
+  }
 }
 
 .price__toggles {
   width: 56px;
   margin: 0 auto;
   margin-top: 42px;
+}
+
+@media (min-width: @tablet-width) {
+  .price__wrapper {
+    width: auto;
+  }
+
+  .price__table {
+    margin: 0 auto;
+  }
+
+  .price__tarif {
+    min-width: 153px;
+    height: 75px;
+  }
+
+  .price__option {
+    min-height: 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price__tarif {
+    width: 233px;
+    height: 94px;
+  }
+
+  .price__option {
+    height: 59px;
+  }
 }

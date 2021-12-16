@@ -8,15 +8,15 @@
   min-height: 396px;
   padding-top: 66px;
   background:
-    url("../img/phone.png") center bottom no-repeat,
-    url("../img/screen.png") center 209px no-repeat,
+    url("../img/phone-mobile.png") center bottom no-repeat,
+    url("../img/screen-mobile.png") center 209px no-repeat,
     url("../img/back-mobile.jpg") center bottom no-repeat;
+  background-size: 320px 286px, 111px 197px, cover;
 }
 
 .intro__title {
   width: 230px;
   margin: 0 auto;
-  // padding: 36px 20px 51px 20px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -94,7 +94,13 @@
 
 @media (min-width: @tablet-width) {
   .intro {
-    min-height: 330px;
+    // min-height: 330px;
+    background:
+      url("../img/phone-tablet.png") right bottom no-repeat,
+      url("../img/screen-tablet.png") 70% 271px no-repeat,
+      url("../img/back-tablet.jpg") center bottom no-repeat;
+    background-color: @sapphire;
+    background-size: 660px 545px, 195px 346px, cover;
   }
 
   .intro__wrapper {
@@ -109,6 +115,7 @@
   .intro__header {
     min-height: 0;
     padding-top: 102px;
+    background-image: none;
   }
 
   .intro__title {
@@ -126,6 +133,11 @@
     }
   }
 
+  .intro__download {
+    background: none;
+    padding-bottom: 119px;
+  }
+
   .intro__description {
     min-width: 490px;
     margin: 0 auto;
@@ -136,7 +148,12 @@
 
 @media (min-width: @desktop-width) {
   .intro {
-    min-height: 284px;
+    // min-height: 284px;
+    background:
+      url("../img/phone-desktop.png") right bottom no-repeat,
+      url("../img/screen-desktop.png") 70% 271px no-repeat,
+      url("../img/back-desktop.jpg") center bottom no-repeat;
+    background-size: 1050px 645px, 230px 408px, cover;
   }
 
   .intro__wrapper {

@@ -1,29 +1,64 @@
 .main-nav {
   position: relative;
-  width: 50px;
+  width: 100%;
   min-height: 24px;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 
-  &--closed .main-nav__wrapper {
-    display: none;
-  }
+  &--closed {
+    .main-nav__wrapper {
+      display: none;
+    }
 
-  &--closed .main-nav__toggle::before {
-    content: "";
-    position: absolute;
-    top: 21px;
-    left: 20px;
-    width: 50px;
-    height: 4px;
-    background-color: #ffffff;
-    border-radius: 1px;
-    box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+    .main-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: 20px;
+      width: 50px;
+      height: 4px;
+      background-color: #ffffff;
+      border-radius: 1px;
+      box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+    }
   }
 
   &--opened .main-nav__wrapper {
     display: block;
+    position: absolute;
     width: 100%;
+  }
+
+  &--opened .main-nav__toggle {
+    top: -60px;
+    right: 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 18px;
+      width: 36px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: fade(#ffffff, 30%);
+    }
+  }
+
+  &--no-js {
+    position: static;
   }
 }
 
@@ -33,8 +68,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -21px;
-  right: -20px;
+  // top: 21px;
+  right: 20px;
   z-index: 2;
   display: block;
   width: 90px;
@@ -63,7 +98,11 @@
   text-align: center;
   padding: 25px 0;
   border-bottom: 1px solid #000000;
-  border-top: 1px solid @lightgrey;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .main-nav__link {
@@ -72,9 +111,28 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav--closed .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    width: 730px;
+    justify-content: space-between;
+    width: 620px;
+    margin-left: auto;
+  }
+
+  .main-nav__item {
+    min-width: auto;
+    background-color: transparent;
+  }
+
+  .main-nav__link {
+    text-transform: none;
   }
 }

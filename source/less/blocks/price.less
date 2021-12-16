@@ -44,8 +44,6 @@
 }
 
 .price__option {
-  // display: flex;
-  // position: relative;
   min-height: 59px;
   font-weight: 400;
   padding: 15px 0 15px 20px;
@@ -60,11 +58,23 @@
     text-transform: none;
   }
 
-  &--enabled .price__img{
-    display: inline-block;
-    width: 31px;
-    height: 21px;
-    background-image: url(../img/yes.svg);
+  // &--enabled .price__img{
+  //   display: inline-block;
+  //   width: 31px;
+  //   height: 21px;
+  //   background-image: url(../img/yes.svg);
+  // }
+
+  &--enabled::after {
+    content: url('../img/yes.svg');
+    float: right;
+    margin-right: 17px;
+  }
+
+  &--disabled::after {
+    content: url('../img/no.svg');
+    float: right;
+    margin-right: 20px;
   }
 }
 

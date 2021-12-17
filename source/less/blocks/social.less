@@ -10,6 +10,19 @@
 .social__item {
   width: 48px;
   height: 48px;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
+}
+
+.social__link {
+  &:hover circle {
+    stroke: @darkgrey;
+    opacity: 1;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+
+  &:active circle {
+    opacity: 0.1;
+  }
 }

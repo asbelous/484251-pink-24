@@ -19,6 +19,16 @@
       border-radius: 1px;
       box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
     }
+
+    .main-nav__toggle:hover::before {
+      background-color: @pink;
+      box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
+    }
+
+    .main-nav__toggle:active::before {
+      background-color: fade(@pink, 30%);
+      box-shadow: 0 10px 0 0 fade(@pink, 30%), 0 20px 0 0 fade(@pink, 30%);
+    }
   }
 
   &--opened .main-nav__wrapper {
@@ -51,9 +61,14 @@
       transform: rotate(-45deg);
     }
 
+    &:hover::before,
+    &:hover::after {
+      background-color: @pink;
+    }
+
     &:active::before,
     &:active::after {
-      background-color: fade(#ffffff, 30%);
+      background-color: fade(@pink, 30%);
     }
   }
 
@@ -103,11 +118,11 @@
     border-bottom: none;
   }
 
-  &:hover .main-nav__link{
+  &:hover .main-nav__link {
     color: @pink;
   }
 
-  &:active .main-nav__link{
+  &:active .main-nav__link {
     color: fade(@pink, 30%);
   }
 }
@@ -142,11 +157,11 @@
     min-width: auto;
     background-color: transparent;
 
-    &:hover .main-nav__link{
+    &:hover .main-nav__link {
       color: @pink;
     }
 
-    &:active .main-nav__link{
+    &:active .main-nav__link {
       color: fade(#ffffff, 30%);
     }
 

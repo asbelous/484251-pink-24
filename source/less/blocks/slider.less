@@ -13,11 +13,20 @@
   background-color: fade(@darkgrey, 30%);
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 
   &--current {
     box-sizing: content-box;
     background-color: #ffffff;
     border: 3px solid @darkgrey;
+  }
+
+  &:hover {
+    background-color: fade(@darkgrey, 60%);
+  }
+
+  &:active {
+    background-color: fade(@darkgrey, 10%);
   }
 }
 

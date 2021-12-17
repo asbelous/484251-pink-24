@@ -5,17 +5,18 @@
 }
 
 .price__wrapper {
-  width: 320px;
+  width: 1120px;
+  // width: 100%;
   margin: 0 auto;
 }
 
 .price__table {
   border-collapse: collapse;
-  margin-left: -540px;
+  margin-left: -596px;
 }
 
 .price__tarif {
-  min-width: 276px;
+  width: 280px;
   height: 94px;
   border: 2px solid #f2f2f2;
   background-color: @darkgrey;
@@ -44,6 +45,7 @@
 }
 
 .price__option {
+  width: 280px;
   min-height: 59px;
   font-weight: 400;
   padding: 15px 0 15px 20px;
@@ -57,13 +59,6 @@
   &--first-row {
     text-transform: none;
   }
-
-  // &--enabled .price__img{
-  //   display: inline-block;
-  //   width: 31px;
-  //   height: 21px;
-  //   background-image: url(../img/yes.svg);
-  // }
 
   &--enabled::after {
     content: url('../img/yes.svg');
@@ -86,7 +81,7 @@
 
 @media (min-width: @tablet-width) {
   .price__wrapper {
-    width: auto;
+    width: 100%;
   }
 
   .price__table {
@@ -94,12 +89,29 @@
   }
 
   .price__tarif {
-    min-width: 153px;
+    width: 153px;
     height: 75px;
   }
 
   .price__option {
+    width: 153px;
     min-height: 45px;
+
+    &-text {
+      display: none;
+    }
+
+    &--enabled::after {
+      display: block;
+      float: none;
+      text-align: center;
+    }
+
+    &--disabled::after {
+      display: block;
+      float: none;
+      text-align: center;
+    }
   }
 }
 
@@ -110,6 +122,7 @@
   }
 
   .price__option {
+    width: 233px;
     height: 59px;
   }
 }

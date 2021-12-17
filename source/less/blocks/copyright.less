@@ -10,3 +10,13 @@
   line-height: 18px;
   color: #283645;
 }
+
+.copyright__link {
+  &:hover path {
+    fill: @darkgrey;
+  }
+
+  &:active path {
+    fill: fade(@darkgrey, 30%);
+  }
+}

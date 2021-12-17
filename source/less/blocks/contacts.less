@@ -57,6 +57,16 @@
   text-decoration: none;
   color: @pink;
 
+  &--link:hover {
+    color: @darkgrey;
+    text-decoration: underline;
+  }
+
+  &--link:active {
+    color: fade(@darkgrey, 30%);
+    text-decoration: none;
+  }
+
   &:last-child {
     width: 280px;
     margin: 0 auto;

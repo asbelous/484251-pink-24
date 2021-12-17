@@ -1,0 +1,43 @@
+.slider__toggles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__toggle {
+  box-sizing: content-box;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  background-color: fade(@darkgrey, 30%);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--current {
+    box-sizing: content-box;
+    background-color: #ffffff;
+    border: 3px solid @darkgrey;
+  }
+
+  &:hover {
+    background-color: fade(@darkgrey, 60%);
+  }
+
+  &:active {
+    background-color: fade(@darkgrey, 10%);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__toggles--price {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__toggles--reviews {
+    display: none;
+  }
+}

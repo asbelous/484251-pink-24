@@ -1,0 +1,28 @@
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  width: 48px;
+  height: 48px;
+}
+
+.social__link {
+  &:hover circle {
+    stroke: @darkgrey;
+    opacity: 1;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+
+  &:active circle {
+    opacity: 0.1;
+  }
+}

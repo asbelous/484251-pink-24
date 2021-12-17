@@ -11,7 +11,6 @@
   .effect__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // padding-bottom: 22px;
   }
 
   .effect__info {
@@ -35,6 +34,14 @@
   .effect__link {
     color: @pink;
     text-decoration: underline;
+
+    &:hover {
+      color: @darkgrey;
+    }
+
+    &:active {
+      color: fade(@darkgrey, 30%);
+    }
   }
 
   .effect__img {

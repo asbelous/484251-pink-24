@@ -133,6 +133,28 @@
   .main-nav__item {
     min-width: auto;
     background-color: transparent;
+
+    &:hover .main-nav__link{
+      color: @pink;
+    }
+
+    &:active .main-nav__link{
+      color: fade(#ffffff, 30%);
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: #ffffff;
+      }
+    }
   }
 
   .main-nav__link {

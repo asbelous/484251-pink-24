@@ -27,7 +27,7 @@
   }
 }
 
-.form__your-contacts {
+.form__contacts {
   padding: 0 22px;
   padding-bottom: 44px;
   border: none;
@@ -70,7 +70,7 @@
   text-transform: uppercase;
   color: @pink;
 
-  &--nonvisible {
+  &--contacts {
     display: none;
   }
 
@@ -93,7 +93,7 @@
   color: @pink;
 
   &--fio,
-  &--your-contacts {
+  &--contacts {
     display: block;
     margin-left: 21px;
   }
@@ -129,7 +129,7 @@
   border: 2px solid #e5e5e5;
 
   &--fio,
-  &--your-contacts {
+  &--contacts {
     width: 100%;
     box-sizing: border-box;
   }
@@ -209,12 +209,30 @@
     border-radius: 1px;
   }
 
-  .form__your-contacts {
+  .form__contacts {
     order: 3;
+    margin-left: 22px;
+    margin-right: 22px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 27px;
+    border: 2px solid @gainsboro;
+    border-radius: 1px;
+
+    p {
+      display: flex;
+      flex-direction: column;
+      margin-top: 31px;
+    }
   }
 
   .form__achievements {
     order: 4;
+    margin-left: 22px;
+    margin-right: 22px;
+    background-color: @white;
+    border: 2px solid @gainsboro;
+    border-radius: 1px;
   }
 
   .form__emotions {
@@ -226,8 +244,11 @@
   }
 
   .form__legend {
-    &--nonvisible {
-      display: inline;
+    &--contacts {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      margin-top: 55px;
   }
 
     &--platforms {
@@ -245,6 +266,10 @@
     &--platforms {
       margin-left: 22px;
     }
+
+    &--contacts {
+      order: 2;
+    }
   }
 
   .form__item {
@@ -252,12 +277,32 @@
       display: inline-block;
       width: auto;
       margin-left: 20px;
-      // box-sizing: content-box;
     }
 
     &--platforms {
       margin-left: 60px;
     }
+
+    &--phone {
+      background: url("../img/phone-icon.svg") no-repeat center right;
+    }
+
+    &--mail {
+      background: url("../img/mail-icon.svg") no-repeat center right;
+    }
+
+    &--achievements {
+      margin-left: 60px;
+    }
+
+    // &--contacts::after {
+    //   position: absolute;
+    //   width: 58px;
+    //   height: 58px;
+    //   top: 0;
+    //   right: 0;
+    //   background-color: @gainsboro;
+    // }
   }
 }
 
@@ -287,7 +332,7 @@
     grid-area: platforms;
   }
 
-  .form__your-contacts {
+  .form__contacts {
     grid-area: contacts;
   }
 

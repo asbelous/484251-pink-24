@@ -1,19 +1,27 @@
 .intro {
   min-width: 320px;
   min-height: 171px;
-  background-color: @sapphire;
+
 }
 
 .intro__header {
   min-height: 396px;
   padding-top: 66px;
-  background: url("../img/back-main-mobile.jpg") center bottom no-repeat;
+  background-color: @sapphire;
+  background: url("../img/back-main-mobile.jpg") center center no-repeat;
   background-size: cover;
+
+  &--inner {
+    min-height: 171px;
+    background: url("../../img/back-mobile.jpg") center top no-repeat;
+    background-size: cover;
+  }
 }
 
 .intro__title {
   width: 230px;
   margin: 0 auto;
+  margin-top: 32px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -70,8 +78,10 @@
 }
 
 .intro__description {
-  min-width: 280px;
-  padding: 54px 20px;
+  // min-width: 280px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 46px 20px;
   font-size: 14px;
   line-height: 30px;
   background-color: #ffffff;
@@ -109,11 +119,18 @@
     min-height: 0;
     padding-top: 102px;
     background-image: none;
+
+    &--inner {
+      min-height: 330px;
+      background: url("../img/back-tablet.jpg") center top no-repeat;
+      background-size: cover;
+    }
   }
 
   .intro__title {
     width: 620px;
     margin: 0 auto;
+    margin-top: 72px;
     padding: 81px 20px 74px 20px;
     font-size: 50px;
     line-height: 68px;
@@ -123,6 +140,10 @@
       margin: 0 auto;
       font-size: 40px;
       line-height: 48px;
+    }
+
+    &--inner {
+      padding: 0;
     }
   }
 
@@ -156,6 +177,14 @@
 
   .intro__header {
     padding-top: 176px;
+
+    &--inner {
+      min-height: 284px;
+      margin-top: 0;
+      // padding-top: 0;
+      background: url("../img/back-desktop.jpg") center top no-repeat;
+      background-size: cover;
+    }
   }
 
   .intro__title {
@@ -167,6 +196,10 @@
     &--main {
       min-width: 300px;
       padding: 0;
+    }
+
+    &--inner {
+      // padding: 0;
     }
   }
 

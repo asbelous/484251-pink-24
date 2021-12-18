@@ -87,14 +87,9 @@
   text-align: center;
 
   &-download {
-    // width: 280px;
-    // margin: 0 auto;
     margin-top: 23px;
     font-weight: 300;
-    // font-size: 14px;
     line-height: 24px;
-    // text-align: center;
-    // color: #ffffff;
   }
 }
 
@@ -103,20 +98,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .intro {
-    // background: url("../img/back-main-tablet.jpg") center bottom no-repeat;
-    background-color: @sapphire;
-    // background-size: cover;
+
+  .intro__wrapper--main {
+    width: 300px;
+    margin-left: 20px;
   }
 
-  .intro__wrapper {
-    width: 100%;
-
-    &--main {
-      width: 300px;
-      margin-left: 20px;
-    }
-  }
 
   .intro__header {
     min-height: 0;
@@ -157,10 +144,10 @@
   }
 
   .intro__description {
-    // width: 100%;
     width: 490px;
     margin: 0 auto;
-    padding: 100px 85px;
+    padding-top: 100px;
+    padding-bottom: 20px;
     font-size: 18px;
   }
 
@@ -190,7 +177,6 @@
     &--inner {
       min-height: 284px;
       margin-top: 0;
-      // padding-top: 0;
       background: url("../img/back-desktop.jpg") center top no-repeat;
       background-size: cover;
     }
@@ -205,10 +191,6 @@
     &--main {
       min-width: 300px;
       padding: 0;
-    }
-
-    &--inner {
-      // padding: 0;
     }
   }
 

@@ -106,7 +106,7 @@
 
   &--fio,
   &--your-contacts {
-    display: block;
+    display: inline-block;
     margin-left: 21px;
   }
 
@@ -194,6 +194,11 @@
 
   .form__fio {
     order: 1;
+    min-width: 618px;
+
+    p {
+      margin-top: 56px;
+    }
   }
 
   .form__platforms {
@@ -218,6 +223,18 @@
 
   .form__legend--nonvisible {
     display: inline;
+  }
+
+  .form__label {
+    &--fio {
+      margin-left: 0;
+    }
+  }
+
+  .form__item {
+    &--fio {
+      margin-left: 20px;
+    }
   }
 
 }

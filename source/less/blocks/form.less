@@ -94,7 +94,7 @@
 
   &--fio,
   &--your-contacts {
-    display: inline-block;
+    display: block;
     margin-left: 21px;
   }
 
@@ -195,12 +195,18 @@
     min-width: 618px;
 
     p {
+      // width: auto;
       margin-top: 56px;
     }
   }
 
   .form__platforms {
     order: 2;
+    margin-left: 22px;
+    margin-right: 22px;
+    background-color: @white;
+    border: 2px solid @gainsboro;
+    border-radius: 1px;
   }
 
   .form__your-contacts {
@@ -219,22 +225,40 @@
     order: 6;
   }
 
-  .form__legend--nonvisible {
-    display: inline;
+  .form__legend {
+    &--nonvisible {
+      display: inline;
   }
+
+    &--platforms {
+      margin-top: 11px;
+    }
+}
 
   .form__label {
     &--fio {
+      display: inline-block;
+      width: auto;
       margin-left: 0;
+    }
+
+    &--platforms {
+      margin-left: 22px;
     }
   }
 
   .form__item {
     &--fio {
+      display: inline-block;
+      width: auto;
       margin-left: 20px;
+      // box-sizing: content-box;
+    }
+
+    &--platforms {
+      margin-left: 60px;
     }
   }
-
 }
 
 @media (min-width: @desktop-width) {

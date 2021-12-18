@@ -1,21 +1,77 @@
 .form__wrapper {
-  min-width: 280px;
-  margin: 0 20px;
-}
-
-.form__form {
-  // width: 100%;
+  min-width: 276px;
 }
 
 .form__fio {
+  width: 276px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 22px;
   padding-bottom:44px;
-  // border: none;
+  border: none;
 
   p {
     margin: 0;
   }
+}
+
+.form__achievements {
+  width: 276px;
+  margin: 0 auto;
+  padding: 0 22px;
+  padding-bottom: 44px;
+  border: none;
+
+  p {
+    margin: 0;
+    padding-bottom: 47px;
+  }
+
+  p:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.form__your-contacts {
+  width: 276px;
+  margin: 0 auto;
+  padding: 0 22px;
+  padding-bottom: 44px;
+  border: none;
+
+  p {
+    margin: 0;
+  }
+}
+
+.form__platforms {
+  width: 276px;
+  margin: 0 auto;
+  padding: 0 22px;
+  padding-bottom: 42px;
+  border: none;
+
+  p {
+    margin: 0;
+    padding-bottom: 38px;
+  }
+
+  p:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.form__emotions {
+  width: 276px;
+  margin: 0 auto;
+  padding: 0 22px;
+  border: none;
+}
+
+.form__submit {
+  width: 276px;
+  margin: 0 auto;
+  padding: 0 22px;
+  border: none;
 }
 
 .form__legend {
@@ -29,6 +85,14 @@
   &--nonvisible {
     display: none;
   }
+
+  &--achievements,
+  &--platforms,
+  &--emotions {
+    display: block;
+    width: 218px;
+    margin: 38px auto;
+  }
 }
 
 .form__label {
@@ -40,26 +104,55 @@
   text-transform: uppercase;
   color: @pink;
 
-  &--fio {
+  &--fio,
+  &--your-contacts {
     display: block;
     margin-left: 21px;
   }
 
   &--achievements {
+    margin: 0;
+    margin-left: 22px;
+    vertical-align: top;
     font-size: 18px;
+    line-height: 35px;
+    text-transform: none;
+    color: @darkgrey;
+  }
+
+  &--platforms {
+    margin: 0;
+    margin-left: 31px;
+    vertical-align: top;
+    font-size: 18px;
+    line-height: 37px;
     text-transform: none;
     color: @darkgrey;
   }
 }
 
 .form__item {
-  // min-width: 100%;
+  margin: 0;
   padding: 14px 0 15px 20px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: @darkgrey;
   border: 2px solid #e5e5e5;
+
+  &--achievements {
+    width: 35px;
+    height: 35px;
+  }
+
+  &--platforms {
+    width: 37px;
+    height: 37px;
+  }
+
+  &--emotions {
+    padding: 22px 20px;
+  }
 }
 
 .form__achievements,
@@ -68,15 +161,24 @@
 }
 
 .form__button {
+  width: 276px;
+  height: 59px;
+  margin-top: 52px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: @green;
+  border: 2px solid @green;
+  border-radius: 1px;
 }
 
 .form__description {
+  width: 185px;
+  margin: 0 auto;
+  margin-top: 36px;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -117,6 +219,7 @@
   .form__legend--nonvisible {
     display: inline;
   }
+
 }
 
 @media (min-width: @desktop-width) {

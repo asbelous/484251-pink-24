@@ -59,7 +59,7 @@
             </h2>
           </div>
           <p class="intro__description">Поделитесь своей историей и получите
-            шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+            шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="please">Пожалуйста, заполните форму ниже:</span></p>
         </div>
       </section>
 
@@ -68,64 +68,70 @@
           <h2 class="visually-hidden">Заполните форму для участия в конкурсе</h2>
           <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__fio">
-              <!-- <p> -->
+              <p>
                 <label class="form__label form__label--fio" for="surname">Фамилия:</label>
-                <input class="form__item" id="surname" type="text" value="Укажите фамилию *" required>
-              <!-- </p> -->
-              <!-- <p> -->
+                <input class="form__item form__item--fio" id="surname" type="text" value="Укажите фамилию *" required>
+              </p>
+              <p>
                 <label class="form__label form__label--fio" for="name">Имя:</label>
-                <input class="form__item" id="name" type="text" value="Укажите имя *" required>
-              <!-- </p> -->
-              <!-- <p> -->
+                <input class="form__item form__item--fio" id="name" type="text" value="Укажите имя *" required>
+              </p>
+              <p>
                 <label class="form__label form__label--fio" for="patronymic">Отчество:</label>
-                <input class="form__item" id="patronymic" type="text" value="Ну и отчество тоже">
-              <!-- </p> -->
+                <input class="form__item form__item--fio" id="patronymic" type="text" value="Ну и отчество тоже">
+              </p>
             </fieldset>
 
             <fieldset class="form__achievements">
-              <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+              <legend class="form__legend form__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
               <p>
-                <input class="form__item" id="shark" type="checkbox" checked>
-                <label class="form__label form__label--achievements" for="shark">Сделал селфи с акулой</label>
+                <input class="form__item form__item--achievements" id="shark" type="checkbox" checked><label class="form__label form__label--achievements" for="shark">Сделал селфи с акулой</label>
               </p>
               <p>
-                <input class="form__item" id="beach" type="checkbox" checked>
-                <label class="form__label form__label--achievements" for="beach">Обгорел на пляже</label>
+                <input class="form__item form__item--achievements" id="beach" type="checkbox" checked><label class="form__label form__label--achievements" for="beach">Обгорел на пляже</label>
               </p>
               <p>
-                <input class="form__item" id="norris" type="checkbox">
-                <label class="form__label form__label--achievements" for="norris">Видел Чака Норриса</labenorrisl>
-              label
-              <p>
-                <input class="form__item" id="souvenirs" type="checkbox">
-                <label class="form__label form__label--achievements" for="souvenirs">Накупил сувениров</label>
+                <input class="form__item form__item--achievements" id="norris" type="checkbox"><label class="form__label form__label--achievements" for="norris">Видел Чака Норриса</label>
               </p>
               <p>
-                <input class="form__item" id="tower" type="checkbox" checked>
-                <label class="form__label form__label--achievements" for="tower">Удержал башню</label>
+                <input class="form__item form__item--achievements" id="souvenirs" type="checkbox"><label class="form__label form__label--achievements" for="souvenirs">Накупил сувениров</label>
               </p>
               <p>
-                <input class="form__item" id="hotel" type="checkbox">
-                <label class="form__label form__label--achievements" for="hotel">Разгромил отель</label>
+                <input class="form__item form__item--achievements" id="tower" type="checkbox" checked><label class="form__label form__label--achievements" for="tower">Удержал башню</label>
+              </p>
+              <p>
+                <input class="form__item form__item--achievements" id="hotel" type="checkbox"><label class="form__label form__label--achievements" for="hotel">Разгромил отель</label>
               </p>
             </fieldset>
 
             <fieldset class="form__your-contacts">
               <legend class="form__legend form__legend--nonvisible">Контактная информация</legend>
-              <p><label class="form__label">Номер телефона<input class="form__item" type="tel" value="Номер, пожалуйста"></label></p>
-              <p><label class="form__label">Адрес почты<input class="form__item" type="email" value="Введите почту *" required></label></p>
+              <p>
+                <label class="form__label form__label--your-contacts" for="phone">Номер телефона</label>
+                <input class="form__item form__item--your-contacts" id="phone" type="tel" value="Номер, пожалуйста">
+              </p>
+              <p>
+                <label class="form__label form__label--your-contacts" for="mail">Адрес почты</label>
+                <input class="form__item form__item--your-contacts" id="mail" type="email" value="Введите почту *" required>
+              </p>
             </fieldset>
 
             <fieldset class="form__platforms">
-              <legend class="form__legend">С каким приложением путешествовали?</legend>
-              <p><label class="form__item"><input type="radio" name="platform" checked>Pink для iOS</label></p>
-              <p><label class="form__item"><input type="radio" name="platform">Pink на Android</label></p>
-              <p><label class="form__item"><input type="radio" name="platform">Windows Phone</label></p>
+              <legend class="form__legend form__legend--platforms">С каким приложением путешествовали?</legend>
+              <p>
+                <input class="form__item form__item--platforms" type="radio" name="platform" checked><label class="form__label form__label--platforms">Pink для iOS</label>
+              </p>
+              <p>
+                <input class="form__item form__item--platforms" type="radio" name="platform"><label class="form__label form__label--platforms">Pink на Android</label>
+              </p>
+              <p>
+                <input class="form__item form__item--platforms" type="radio" name="platform"><label class="form__label form__label--platforms">Windows Phone</label>
+              </p>
             </fieldset>
 
             <fieldset class="form__emotions">
-              <legend class="form__legend">Опишите свои эмоции</legend>
-              <textarea class="form__item" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+              <legend class="form__legend form__legend--emotions">Опишите свои эмоции</legend>
+              <textarea class="form__item form__item--emotions" cols="21" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
             </fieldset>
 
             <fieldset class="form__submit">

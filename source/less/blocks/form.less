@@ -197,7 +197,15 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  color: @darkgrey;
+}
+
+.pink {
   color: @pink;
+}
+
+.required {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -324,7 +332,7 @@
 @media (min-width: @desktop-width) {
   .form__wrapper {
     width: 100%;
-    padding: 0 132px;
+    // padding: 0 132px;
   }
 
   .form__form {
@@ -341,25 +349,74 @@
 
   .form__fio {
     grid-area: fio;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 433px;
+    min-height: 291px;
+    padding-left: 130px;
+    padding-right: 37px;
+    padding-bottom: 0;
+
+    p {
+      margin-top: 0;
+    }
   }
 
   .form__platforms {
     grid-area: platforms;
+    min-width: 431px;
+    min-height: 297px;
+    margin-left: 37px;
+    margin-right: 130px;
+    padding: 0;
   }
 
   .form__contacts {
     grid-area: contacts;
+    margin: 0 130px;
+    margin-top: 54px;
   }
 
   .form__achievements {
     grid-area: achievements;
+    margin: 0 130px;
+    margin-top: 54px;
+
   }
 
   .form__emotions {
     grid-area: emotions;
+    margin: 0 130px;
+    margin-top: 54px;
+    padding-top: 44px;
+    padding-bottom: 45px;
   }
 
   .form__submit {
     grid-area: submit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 130px;
+    margin-top: 69px;
+    padding: 0;
+  }
+
+  .form__button {
+    margin: 0;
+  }
+
+  .form__description {
+    width: auto;
+    margin: 0;
+  }
+
+  .required {
+    display: inline;
+  }
+
+  .form__legend {
+      margin: 0 auto;
   }
 }

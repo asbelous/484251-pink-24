@@ -170,6 +170,22 @@
   background-color: @green;
   border: 2px solid @green;
   border-radius: 1px;
+
+  &:hover {
+    background-color: @darkgreen;
+    border: 2px solid @darkgreen;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: @darkgreen;
+    border: 2px solid @darkgreen;
+  }
+
+  &--disabled {
+    background-color: @gainsboro;
+    border: 2px solid @gainsboro;
+  }
 }
 
 .form__description {

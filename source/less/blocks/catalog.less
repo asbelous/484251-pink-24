@@ -1,14 +1,74 @@
+.catalog {
+  margin-top: 6px;
+}
+
 .catalog__wrapper {
-  min-width: 280px;
-  margin: 0 auto;
+  // min-width: 320px;
+  // margin: 0 auto;
 }
 
 .catalog__item {
+  min-width: 320px;
+  margin: 0 auto;
   margin-top: 20px;
 }
 
-.item--panorama {
+.catalog__link {
+  display: block;
+  width: 320px;
   margin: 0 auto;
+}
+
+.catalog__photo {
+  display: block;
+  margin: 0 auto;
+}
+
+.catalog__info {
+  width: 280px;
+  margin: 0 auto;
+  padding: 18px 10px 19px 17px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 24px;
+  color: @darkgrey;
+  background-color: @lightgrey;
+}
+
+.catalog__time-ago {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.catalog__post {
+  margin: 0;
+}
+
+.catalog__like {
+  position: relative;
+  width: 121px;
+  margin: 0;
+  margin-top: 12px;
+  font-size: 12px;
+  text-align: right;
+  text-transform: uppercase;
+  color: @pink;
+
+
+  &::before {
+    content: url("../img/heart.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+}
+
+.catalog__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {

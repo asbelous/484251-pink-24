@@ -3,25 +3,53 @@
 }
 
 .catalog__wrapper {
-  // min-width: 320px;
-  // margin: 0 auto;
+  min-width: 100%;
 }
 
 .catalog__item {
-  min-width: 320px;
+  position: relative;
   margin: 0 auto;
   margin-top: 20px;
+
+  &--panorama {
+    margin-top: 0;
+  }
 }
 
 .catalog__link {
+  position: relative;
   display: block;
-  width: 320px;
   margin: 0 auto;
+
+  &--panorama::before {
+    position: absolute;
+    content: "Панорама дня";
+    padding: 5px 20px 7px 19px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: @white;
+    background-color: @pink;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+  }
 }
 
 .catalog__photo {
+  position: relative;
   display: block;
+
   margin: 0 auto;
+
+  &--panorama {
+    width: 100%;
+    height: auto;
+  }
+
+
 }
 
 .catalog__info {
@@ -72,6 +100,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog__link {
+
+  }
+  .catalog__photo {
+    &--panorama {
+      min-width: 660px;
+    }
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +120,10 @@
 
   .catalog__item {
     width: 300px;
+
+    &--panorama .catalog__info {
+      width: 620px;
+    }
   }
 }
 

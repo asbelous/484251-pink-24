@@ -3,8 +3,11 @@
 }
 
 .upload__wrapper {
-  width: auto;
-  margin: 0 auto;
+  padding-bottom: 41px;
+}
+
+.upload__header {
+  background-color: @white;
 }
 
 .upload__text {
@@ -20,10 +23,51 @@
   color: @darkgrey;
 }
 
-.upload__buttons {
+.upload__photo {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.upload__button {
+  display: block;
+  width: 280px;
+  height: 55px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   text-align: center;
-  color: @pink;
+  border-radius: 30px;
+
+  &--post {
+    margin-bottom: 12px;
+    color: @pink;
+    border: 3px solid @pink;
+}
+
+  &--post:hover {
+    color: @white;
+    background-color: @pink;
+  }
+
+  &--post:active {
+    color: fade(@white, 30%);
+  }
+
+  &--reject {
+    color: fade(@darkgrey, 10%);
+    border: 3px solid fade(@darkgrey, 10%);
+  }
+
+  &--reject:hover {
+    color: fade(@darkgrey, 30%);
+    border: 3px solid fade(@darkgrey, 30%);
+  }
+
+  &--reject:active {
+    color: fade(@white, 30%);
+    background-color: fade(@darkgrey, 30%);
+  }
 }

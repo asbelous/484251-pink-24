@@ -14,6 +14,7 @@
 
 .form__achievements {
   padding: 0 22px;
+  // padding-top: 60px;
   padding-bottom: 44px;
   border: none;
 
@@ -79,7 +80,24 @@
   &--emotions {
     display: block;
     width: 218px;
-    margin: 38px auto;
+    margin: 0 auto;
+  }
+
+  &--achievements {
+    position: relative;
+    top: 58px;
+    margin-bottom: 99px;
+  }
+
+  &--platforms {
+    position: relative;
+    top: 58px;
+    margin-bottom: 95px;
+  }
+
+  &--emotions {
+    margin-top: 38px;
+    margin-bottom: 18px;
   }
 }
 
@@ -219,6 +237,7 @@
     min-width: 618px;
 
     p {
+      display: flex;
       margin-top: 56px;
     }
   }
@@ -307,6 +326,7 @@
   .form__item {
     &--fio {
       display: inline-block;
+      flex-grow: 1;
       width: auto;
       margin-left: 20px;
     }
@@ -330,11 +350,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form__wrapper {
-    width: 100%;
-    // padding: 0 132px;
-  }
-
   .form__form {
     display: grid;
     grid-template-areas:
@@ -344,14 +359,13 @@
       "emotions emotions"
       "submit submit";
     grid-template-rows: 1fr 1fr;
-    min-width: 936px;
   }
 
   .form__fio {
     grid-area: fio;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     min-width: 433px;
     min-height: 291px;
     padding-left: 130px;
@@ -359,12 +373,17 @@
     padding-bottom: 0;
 
     p {
-      margin-top: 0;
+      margin-top: 56px;
+    }
+
+    p:first-child {
+      margin-top: 16px;
     }
   }
 
   .form__platforms {
     grid-area: platforms;
+    box-sizing: border-box;
     min-width: 431px;
     min-height: 297px;
     margin-left: 37px;

@@ -61,13 +61,14 @@
       </section>
 
       <section class="catalog">
+        <a class="catalog__link catalog__link--panorama" href="img/panorama-tablet.jpg">
+          <img class="catalog__photo catalog__photo--panorama" src="img/panorama-tablet.jpg" width="320" height="137" alt="Фото Анны">
+        </a>
         <div class="catalog__wrapper">
           <h2 class="visually-hidden">Каталог фотографий</h2>
 
           <div class="catalog__item catalog__item--panorama">
-            <a class="catalog__link" href="img/panorama-tablet.jpg">
-              <img class="catalog__photo catalog__photo--panorama" src="img/panorama-tablet.jpg" width="320" height="137" alt="Фото Анны">
-            </a>
+
             <div class="catalog__info">
               <b class="catalog__name">Анна</b>
               <span class="catalog__time-ago">(5 минут назад)</span>
@@ -155,7 +156,9 @@
       <section class="upload">
         <div class="upload__wrapper">
           <h2 class="visually-hidden">Редактор фотографий</h2>
-          <p class="upload__text">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
+          <div class="upload__header">
+            <p class="upload__text">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
           <img class="upload__photo" src="img/photo-7-tablet.jpg" width="280" height="374" alt="Фото для редактирования">
           <div class="upload__editor-tools editor-tools">
             <button class="editor-tools__tool editor-tools__tool--active"></button>
@@ -164,8 +167,8 @@
             <div class="editor-tool__range"></div>
           </div>
           <div class="upload__buttons">
-            <button class="upload__buttons upload__buttons--post">Запостить</button>
-            <button class="upload__buttons upload__buttons--reject">Отмена</button>
+            <button class="upload__button upload__button--post">Запостить</button>
+            <button class="upload__button upload__button--reject">Отмена</button>
           </div>
         </div>
       </section>

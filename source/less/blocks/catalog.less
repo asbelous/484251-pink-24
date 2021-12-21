@@ -121,20 +121,55 @@
     }
   }
 
+  .catalog__info {
+    padding: 30px;
+  }
+
+  .catalog__like {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    p {
+      order: 1;
+    }
+
+    .catalog__heart {
+      order: 2;
+      margin-right: 0;
+    }
+  }
+
   .catalog__info--panorama {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 620px;
+    padding: 24px 30px 32px 30px;
 
     .catalog__name {
       order: 1;
+      align-self: flex-end;
     }
 
     .catalog__like {
       order: 2;
+      margin: 0;
+    }
+
+    .catalog__like p {
+      order: 1;
+    }
+
+    .catalog__like .catalog__heart {
+      order: 2;
+      margin-right: 0;
+      margin-left: 16px;
     }
 
     .catalog__post {
       order: 3;
+      width: 100%;
     }
   }
 }

@@ -59,7 +59,11 @@
     margin: 0 auto;
     margin-top: 34px;
     margin-bottom: 27px;
-    border: 1px solid @black;
+    border: 1px dashed @black;
+  }
+
+  &--non-mobile {
+    display: none;
   }
 }
 
@@ -83,7 +87,7 @@
     margin-bottom: 12px;
     color: @pink;
     border: 3px solid @pink;
-}
+  }
 
   &--post:hover {
     color: @white;
@@ -107,5 +111,82 @@
   &--reject:active {
     color: fade(@white, 30%);
     background-color: fade(@darkgrey, 30%);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .upload__text {
+    width: auto;
+  }
+
+  .upload__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 511px;
+    padding: 57px 20px 54px 20px;
+  }
+
+  .upload__photo {
+    margin: 0;
+  }
+
+  .upload__editor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  .upload__editor-tool {
+    position: relative;
+    width: 275px;
+    border-bottom: 1px solid fade(@darkgrey, 10%);
+
+    &--crop {
+      margin-top: -18px;
+    }
+
+    &--crop::before {
+      position: absolute;
+      content: url("../../img/tablet-editor-crop.svg");
+      left: 0;
+    }
+
+    &--fill::before {
+      position: absolute;
+      content: url("../../img/tablet-editor-fill.svg");
+      left: 0;
+    }
+
+    &--contrast::before {
+      position: absolute;
+      content: url("../../img/tablet-editor-contrast.svg");
+      left: 0;
+    }
+  }
+
+  .upload__editor-range {
+    width: 202px;
+    height: 14px;
+    margin: 0;
+    margin-left: 55px;
+    margin-top: 30px;
+    margin-bottom: 27px;
+    border: 1px dashed @black;
+  }
+
+  .upload__buttons {
+    border: none;
+  }
+
+  .upload__button--post {
+    margin-bottom: 24px;
   }
 }

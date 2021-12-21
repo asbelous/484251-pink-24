@@ -30,6 +30,44 @@
   margin-top: 20px;
 }
 
+.upload__editor {
+  margin-top: 42px;
+
+  &-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 194px;
+    margin: 0 auto;
+  }
+
+  &-tool {
+    border: none;
+    background-color: transparent;
+  }
+
+  &-tool--active g {
+    opacity: 1;
+  }
+
+  &-tool--active path {
+    fill: @pink;
+  }
+
+  &-range {
+    width: 240px;
+    height: 14px;
+    margin: 0 auto;
+    margin-top: 34px;
+    margin-bottom: 27px;
+    border: 1px solid @black;
+  }
+}
+
+.upload__buttons {
+  padding-top: 38px;
+  border-top: 1px solid fade(@darkgrey, 10%);
+}
+
 .upload__button {
   display: block;
   width: 280px;

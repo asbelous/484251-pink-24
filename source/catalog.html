@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  
+
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
@@ -67,7 +67,11 @@
 
       <section class="catalog">
         <a class="catalog__link catalog__link--panorama" href="img/panorama-tablet.jpg">
-          <img class="catalog__photo catalog__photo--panorama" src="img/panorama-tablet.jpg" width="320" height="137" alt="Фото Анны">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="catalog__photo catalog__photo--panorama" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама дня - фото Анны">
+          </picture>
         </a>
         <div class="catalog__wrapper">
           <h2 class="visually-hidden">Каталог фотографий</h2>
@@ -92,8 +96,12 @@
 
           <ul class="catalog__list">
             <li class="catalog__item">
-              <a class="catalog__link" href="img/photo-1-mobile.jpg">
-                <img class="catalog__photo" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Фото Левона">
+              <a class="catalog__link" href="img/photo-1-tablet.jpg">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <img class="catalog__photo" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фото Левона">
+                </picture>
               </a>
               <div class="catalog__info">
                 <b class="catalog__name">Левон</b>
@@ -110,8 +118,12 @@
             </li>
 
             <li class="catalog__item">
-              <a class="catalog__link" href="img/photo-2-mobile.jpg">
-                <img class="catalog__photo" src="img/photo-2-mobile.jpg" width="280" height="180" alt="Фото Антона">
+              <a class="catalog__link" href="img/photo-2-tablet.jpg">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img class="catalog__photo" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фото Антона">
+                </picture>
               </a>
               <div class="catalog__info">
                 <b class="catalog__name">Антон</b>
@@ -129,7 +141,11 @@
 
             <li class="catalog__item">
               <a class="catalog__link" href="img/photo-3-tablet.jpg">
-                <img class="catalog__photo"src="img/photo-3-tablet.jpg" width="280" height="180" alt="Фото Бориса">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img class="catalog__photo" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фото Бориса">
+                </picture>
               </a>
               <div class="catalog__info">
                 <b class="catalog__name">Борис</b>
@@ -147,7 +163,11 @@
 
             <li class="catalog__item">
               <a class="catalog__link" href="img/photo-4-tablet.jpg">
-                <img class="catalog__photo"src="img/photo-4-tablet.jpg" width="280" height="180" alt="Фото Сергея">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                  <img class="catalog__photo" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фото Сергея">
+                </picture>
               </a>
               <div class="catalog__info">
                 <b class="catalog__name">Сергей</b>
@@ -165,7 +185,11 @@
 
             <li class="catalog__item">
               <a class="catalog__link" href="img/photo-5-tablet.jpg">
-                <img class="catalog__photo"src="img/photo-5-tablet.jpg" width="280" height="180" alt="Фото Максима">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                  <img class="catalog__photo" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фото Максима">
+                </picture>
               </a>
               <div class="catalog__info">
                 <b class="catalog__name">Максим</b>
@@ -183,7 +207,11 @@
 
             <li class="catalog__item">
               <a class="catalog__link" href="img/photo-6-tablet.jpg">
-                <img class="catalog__photo"src="img/photo-6-tablet.jpg" width="280" height="180" alt="Фото Надежды">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                  <img class="catalog__photo" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фото Надежды">
+                </picture>
               </a>
               <div class="catalog__info">
                 <b class="catalog__name">Надежда</b>
@@ -209,7 +237,10 @@
             <p class="upload__text">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
           </div>
           <div class="upload__main">
-            <img class="upload__photo" src="img/photo-7-tablet.jpg" width="280" height="374" alt="Фото для редактирования">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+              <img class="catalog__photo" src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" width="280" height="180" alt="Фото Левона">
+            </picture>
           <div class="upload__editor upload__editor--mobile">
             <div class="upload__editor-buttons">
               <button class="upload__editor-tool upload__editor-tool--active">

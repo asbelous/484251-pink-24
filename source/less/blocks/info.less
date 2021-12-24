@@ -1,11 +1,10 @@
 .info {
-  background-color: #f2f2f2;
+  background-color: @lightgrey;
 }
 
 .info__header {
   margin-top: 42px;
-  // margin: 46px 0 40px 0;
-  background-color: #ffffff;
+  background-color: @white;
   padding-bottom: 26px;
 }
 
@@ -16,7 +15,7 @@
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #283645;
+  color: @darkgrey;
 }
 
 .info__list {
@@ -25,13 +24,17 @@
   padding-bottom: 10px;
 }
 
+.info__item-photo {
+  display: none;
+}
+
 .info__term {
   margin-top: 38px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  color: #000000;
+  color: @black;
 }
 
 .info__definition {
@@ -46,10 +49,14 @@
 }
 
 .info__image {
-  height: 279px;
+  height: 277px;
   margin-top: 48px;
   text-align: center;
   overflow: hidden;
+
+  &--tablet {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -76,8 +83,8 @@
 
   .info__list {
     order: 2;
-    margin-top: 52px;
-    padding-bottom: 49px;
+    padding: 0;
+    padding-top: 52px;
   }
 
   .info__term {
@@ -86,9 +93,23 @@
   }
 
   .info__definition {
+    width: auto;
     margin-left: 0;
     margin-top: 24px;
     text-align: left;
+  }
+
+  .info__image {
+    height: 481px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -97,6 +118,7 @@
     width: auto;
     margin: auto;
     margin-top: 77px;
+    padding-bottom: 66px;
   }
 
   .info__text {
@@ -115,10 +137,36 @@
   .info__list {
     display: flex;
     justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 6px;
     padding: 0 54px;
   }
 
   .info__item {
     width: 252px;
+
+    &-photo {
+      display: block;
+      height: 301px;
+      overflow: hidden;
+    }
+
+    &-photo img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .info__term {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .info__definition {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
   }
 }

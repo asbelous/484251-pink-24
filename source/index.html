@@ -2,10 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
+
   <body class="page__body">
     <header class="page-header page-header--no-js">
       <div class="page-header__wrapper">
@@ -52,7 +57,7 @@
 
         <section class="intro intro--main">
           <div class="intro__wrapper intro__wrapper--main">
-            <div class="intro__header">
+            <div class="intro__header intro__header--main">
               <h2 class="intro__title intro__title--main">
                 Взгляните на жизнь иначе!
               </h2>
@@ -61,13 +66,13 @@
               <button class="intro__download-button" type="button">Скачать приложение</button>
               <ul class="intro__available-platforms">
                 <li class="intro__available-platform intro__available-platform--apple-logo">
-                  <a href=""><img src="" alt=""></a>
+                  <a href="https://www.apple.com/"><img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple"></a>
                 </li>
                 <li class="intro__available-platform intro__available-platform--android-logo">
-                  <a href=""><img src="" alt=""></a>
+                  <a href="https://www.android.com/"><img src="img/android-logo.svg" width="43" height="47" alt="Логотип Android"></a>
                 </li>
                 <li class="intro__available-platform intro__available-platform--microsoft-logo">
-                  <a href=""><img src="" alt=""></a>
+                  <a href="https://www.microsoft.com"><img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft"></a>
                 </li>
               </ul>
               <p class="intro__description-download">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -85,6 +90,9 @@
             <div class="info__main">
               <dl class="info__list">
                 <div class="info__item">
+                  <div class="info__item-photo">
+                    <img src="img/iphone-1-desktop.jpg" srcset="img/iphone-1-desktop@2x.jpg 2x" alt="Мусорные баки в чёрно-белых цветах">
+                  </div>
                   <dt class="info__term">
                     <b>Поднимает настроение</b>
                   </dt>
@@ -93,6 +101,9 @@
                   </dd>
                 </div>
                 <div class="info__item">
+                  <div class="info__item-photo">
+                    <img src="img/iphone-2-desktop.jpg" srcset="img/iphone-2-desktop@2x.jpg 2x" alt="Мусорные баки в розовых тонах">
+                  </div>
                   <dt class="info__term">
                     <b>Меняет мир вокруг</b>
                   </dt>
@@ -101,6 +112,9 @@
                   </dd>
                 </div>
                 <div class="info__item">
+                  <div class="info__item-photo">
+                    <img src="img/iphone-3-desktop.jpg" srcset="img/iphone-3-desktop@2x.jpg 2x" alt="Мусорные баки в розовых тонах, со смайликом поверх">
+                  </div>
                   <dt class="info__term">
                     <b>Заводит новых друзей</b>
                   </dt>
@@ -110,7 +124,12 @@
                 </div>
               </dl>
               <div class="info__image">
-                <img class="info__iphone" src="img/iphone-3.jpg" width="157" height="320" alt="Фотография мусорных баков в розовом цвете, с наложенным сверху смайликом и надписью 'Всем привет!'" >
+                <!-- <picture>
+                  <source media="(min-width: 660px)" srcset="img/iphone-3-tablet.jpg 1x, img/iphone-3-tablet@2x.jpg 2x">
+                  <img src="img/iphone-3-mobile.jpg" srcset="img/iphone-3-mobile@2x.jpg 2x" width="157" height="320" alt="Фотография мусорных баков в розовом цвете, с наложенным сверху смайликом и надписью 'Всем привет!'">
+                </picture> -->
+                <img class="info__image--mobile" src="img/iphone-3-mobile.jpg" srcset="img/iphone-3-mobile@2x.jpg 2x" width="157" height="320" alt="Фотография мусорных баков в розовом цвете, с наложенным сверху смайликом и надписью 'Всем привет!'">
+                <img class="info__image--tablet" src="img/iphone-3-tablet.jpg" srcset="img/iphone-3-tablet@2x.jpg 2x" alt="Фотография мусорных баков в розовом цвете, с наложенным сверху смайликом и надписью 'Всем привет!'">
               </div>
             </div>
           </div>
@@ -123,7 +142,7 @@
               <p class="effect__text">Британские ученые провели исследования <br>и доказали, что положительный эффект <br>от использования приложения длитсцелые сутки!</p>
               <a class="effect__link" href="#">Узнать больше об исследовании</a>
             </div>
-            <img class="effect__img" src="img/timer.png" width="238" height="276" alt="Изображение таймера">
+            <img class="effect__img" src="img/timer.png" srcset="img/timer@2x.png 2x" width="238" height="276" alt="Изображение таймера">
           </div>
         </section>
 

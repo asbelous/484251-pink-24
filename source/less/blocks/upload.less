@@ -124,6 +124,8 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 660px;
+    margin: 0 auto;
     padding: 57px 20px 54px 20px;
   }
 
@@ -148,28 +150,29 @@
   .upload__editor-tool {
     position: relative;
     width: 275px;
+    padding: 30px 0 27px 0;
     border-bottom: 1px solid fade(@darkgrey, 10%);
 
     &--crop {
       margin-top: -18px;
+      background-image: url("../img/editor-crop.svg");
+      background-repeat: no-repeat;
+      background-size: 22px 22px;
+      background-position: left center;
     }
 
-    &--crop::before {
-      position: absolute;
-      content: url("../../img/tablet-editor-crop.svg");
-      left: 0;
+    &--fill {
+      background-image: url("../img/editor-fill.svg");
+      background-repeat: no-repeat;
+      background-size: 24px 22px;
+      background-position: left center;
     }
 
-    &--fill::before {
-      position: absolute;
-      content: url("../../img/tablet-editor-fill.svg");
-      left: 0;
-    }
-
-    &--contrast::before {
-      position: absolute;
-      content: url("../../img/tablet-editor-contrast.svg");
-      left: 0;
+    &--contrast {
+      background-image: url("../img/editor-contrast.svg");
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+      background-position: left center;
     }
   }
 
@@ -178,9 +181,6 @@
     height: 14px;
     margin: 0;
     margin-left: 55px;
-    margin-top: 30px;
-    margin-bottom: 27px;
-    border: 1px dashed @black;
   }
 
   .upload__buttons {
@@ -203,22 +203,19 @@
   .upload__editor-tool {
     width: 410px;
 
-    &--crop::before {
-      position: absolute;
-      content: url("../../img/desktop-editor-crop.svg");
-      left: 0;
+    &--crop {
+      background-size: 44px 44px;
+      background-position: left center;
     }
 
-    &--fill::before {
-      position: absolute;
-      content: url("../../img/desktop-editor-fill.svg");
-      left: 0;
+    &--fill {
+      background-size: 48px 43px;
+      background-position: left center;
     }
 
-    &--contrast::before {
-      position: absolute;
-      content: url("../../img/desktop-editor-contrast.svg");
-      left: 0;
+    &--contrast {
+      background-size: 38px 38px;
+      background-position: left center;
     }
 
     &:last-child {

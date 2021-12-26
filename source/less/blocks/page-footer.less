@@ -10,7 +10,15 @@
 
 .page-footer__logo {
   display: block;
-  text-align: center;
+  width: 145px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.page-footer__logo-img {
+  &--desktop {
+    display: none;
+  }
 }
 
 .page-footer__social {
@@ -35,6 +43,10 @@
     padding: 0 20px;
   }
 
+  .page-footer__logo {
+    margin: 0;
+  }
+
   .page-footer__social {
     margin: 0;
   }
@@ -51,5 +63,19 @@
 
   .page-footer__wrapper {
     padding: 70px 130px 75px 130px;
+  }
+
+  .page-footer__logo {
+    width: 147px;
+  }
+
+  .page-footer__logo-img {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }

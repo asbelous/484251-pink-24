@@ -35,21 +35,44 @@
 
 .page-header__logo {
   display: block;
+  // width: 74px;
+  // height: 23px;
   padding: 20px;
+  // padding-left: 20px;
 
-  path {
-    fill: #ffffff;
+  // svg {
+  //   width: 100%;
+  //   height: 100%;
+  //}
+}
+
+.page-header__logo-img {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
+  .page-header__wrapper {
     min-height: 110px;
   }
 
   .page-header__logo {
     width: 145px;
-    height: 40px;
+  }
+
+  .page-header__logo-img {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 
   .page-header__toggle {
@@ -69,7 +92,16 @@
 
   .page-header__logo {
     width: 147px;
-    height: 40px;
+  }
+
+  .page-header__logo-img {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 
   .page-header__toggle {

@@ -123,6 +123,8 @@
   }
 
   .catalog__item {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     margin: 0;
 
@@ -132,15 +134,19 @@
   }
 
   .catalog__info {
+    display: flex;
+    flex-direction: column;
     width: auto;
     margin: 0;
     padding: 30px;
+    flex-grow: 1;
   }
 
   .catalog__like {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-top: auto;
 
     p {
       order: 1;
@@ -154,6 +160,7 @@
 
   .catalog__info--panorama {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 620px;

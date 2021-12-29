@@ -4,7 +4,7 @@
     <title>HTML Academy: Пинк</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -86,22 +86,22 @@
               <ul class="intro__available-platforms">
                 <li class="intro__available-platform intro__available-platform--apple-logo">
                   <a class="intro__download-link" href="https://www.apple.com/" aria-label="Ссылка на сайт Apple.">
-                    <svg role="img" focusable="false">
-                      <use xlink:href="img/sprite.svg#apple-logo"></use>
+                    <svg role="img" focusable="false" width="47" height="56" viewBox="0 0 47 56">
+                      <use xlink:href="img/sprites/sprite.svg#apple-logo"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="intro__available-platform intro__available-platform--android-logo">
                   <a class="intro__download-link" href="https://www.android.com/" aria-label="Ссылка на сайт Android.">
-                    <svg role="img" focusable="false">
-                      <use xlink:href="img/sprite.svg#android-logo"></use>
+                    <svg role="img" focusable="false" width="43" height="47" viewBox="0 0 43 47">
+                      <use xlink:href="img/sprites/sprite.svg#android-logo"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="intro__available-platform intro__available-platform--microsoft-logo">
                   <a class="intro__download-link" href="https://www.microsoft.com" aria-label="Ссылка на сайт Microsoft.">
-                    <svg role="img" focusable="false">
-                      <use xlink:href="img/sprite.svg#microsoft-logo"></use>
+                    <svg role="img" focusable="false" width="44" height="41" viewBox="0 0 44 41">
+                      <use xlink:href="img/sprites/sprite.svg#microsoft-logo"></use>
                     </svg>
                   </a>
                 </li>
@@ -115,14 +115,17 @@
           <div class="info__wrapper">
             <header class="info__header">
               <h2 class="visually-hidden">Информация о нашем приложении</h2>
-              <p class="info__text">Устали от серости <br>мегаполиса?</p>
+              <p class="info__text">Устали от серости&nbsp;<br>мегаполиса?</p>
               <p class="info__text">Нам есть, что вам <br>предложить!</p>
             </header>
             <div class="info__main">
               <dl class="info__list">
                 <div class="info__item">
                   <div class="info__item-photo">
-                    <img src="img/iphone-1-desktop.jpg" srcset="img/iphone-1-desktop@2x.jpg 2x" alt="Мусорные баки в чёрно-белых цветах">
+                    <picture>
+                      <source type="image/webp" srcset="img/iphone-1-desktop.webp 1x, img/iphone-1-desktop@2x.webp 2x">
+                      <img src="img/iphone-1-desktop.jpg" srcset="img/iphone-1-desktop@2x.jpg 2x" width="186" height="382" alt="Мусорные баки в чёрно-белых цветах">
+                    </picture>
                   </div>
                   <dt class="info__term">
                     <b>Поднимает настроение</b>
@@ -133,7 +136,10 @@
                 </div>
                 <div class="info__item">
                   <div class="info__item-photo">
-                    <img src="img/iphone-2-desktop.jpg" srcset="img/iphone-2-desktop@2x.jpg 2x" alt="Мусорные баки в розовых тонах">
+                    <picture>
+                      <source type="image/webp" srcset="img/iphone-2-desktop.webp 1x, img/iphone-2-desktop@2x.webp 2x">
+                      <img src="img/iphone-2-desktop.jpg" srcset="img/iphone-2-desktop@2x.jpg 2x" width="186" height="382" alt="Мусорные баки в розовых тонах">
+                    </picture>
                   </div>
                   <dt class="info__term">
                     <b>Меняет мир вокруг</b>
@@ -144,7 +150,10 @@
                 </div>
                 <div class="info__item">
                   <div class="info__item-photo">
-                    <img src="img/iphone-3-desktop.jpg" srcset="img/iphone-3-desktop@2x.jpg 2x" alt="Мусорные баки в розовых тонах, со смайликом поверх">
+                    <picture>
+                      <source type="image/webp" srcset="img/iphone-3-desktop.webp 1x, img/iphone-3-desktop@2x.webp 2x">
+                      <img src="img/iphone-3-desktop.jpg" srcset="img/iphone-3-desktop@2x.jpg 2x" width="186" height="382" alt="Мусорные баки в розовых тонах, со смайликом поверх">
+                    </picture>
                   </div>
                   <dt class="info__term">
                     <b>Заводит новых друзей</b>
@@ -155,8 +164,16 @@
                 </div>
               </dl>
               <div class="info__image">
-                <img class="info__image--mobile" src="img/iphone-3-mobile.jpg" srcset="img/iphone-3-mobile@2x.jpg 2x" width="157" height="320" alt="Фотография мусорных баков в розовом цвете, с наложенным сверху смайликом и надписью 'Всем привет!'">
-                <img class="info__image--tablet" src="img/iphone-3-tablet.jpg" srcset="img/iphone-3-tablet@2x.jpg 2x" alt="Фотография мусорных баков в розовом цвете, с наложенным сверху смайликом и надписью 'Всем привет!'">
+                <div class="info__image info__image--mobile">
+                  <picture>
+                    <source type="image/webp" srcset="img/iphone-3-mobile.webp 1x, img/iphone-3-mobile@2x.webp 2x">
+                    <img src="img/iphone-3-mobile.jpg" srcset="img/iphone-3-mobile@2x.jpg 2x" width="157" height="320" alt="Фотография мусорных баков в розовом цвете, с наложенным сверху смайликом и надписью 'Всем привет!'">
+                  </picture>
+                </div>
+                <div class="info_image info__image--tablet">
+                  <source type="image/webp" srcset="img/iphone-3-tablet.webp 1x, img/iphone-3-tablet@2x.webp 2x">
+                  <img class="info__image--tablet" src="img/iphone-3-tablet.jpg" srcset="img/iphone-3-tablet@2x.jpg 2x" alt="Фотография мусорных баков в розовом цвете, с наложенным сверху смайликом и надписью 'Всем привет!'">
+                </div>
               </div>
             </div>
           </div>
@@ -164,12 +181,16 @@
 
         <section class="effect">
           <div class="effect__wrapper">
+            <div class="effect__img">
+              <source type="image/webp" srcset="img/timer.webp 1x, img/timer@2x.webp 2x">
+              <img class="effect__img" src="img/timer.png" srcset="img/timer@2x.png 2x" width="238" height="276" alt="Изображение таймера">
+            </div>
             <div class="effect__info">
               <h2 class="effect__title">Эффект <br>на 24 часа!</h2>
               <p class="effect__text">Британские ученые провели исследования <br>и доказали, что положительный эффект <br>от использования приложения длитсцелые сутки!</p>
               <a class="effect__link" href="#">Узнать больше об исследовании</a>
             </div>
-            <img class="effect__img" src="img/timer.png" srcset="img/timer@2x.png 2x" width="238" height="276" alt="Изображение таймера">
+
           </div>
         </section>
 

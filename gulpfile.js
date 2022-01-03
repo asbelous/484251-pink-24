@@ -86,7 +86,7 @@ const sprite = () => {
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img/sprites'))
+    .pipe(gulp.dest('build/img'))
 }
 
 // Copy

@@ -80,7 +80,7 @@ const svg = () => {
 }
 
 const sprite = () => {
-  return gulp.src('source/img/platforms-logo/*.svg')
+  return gulp.src('source/img/sprite/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true

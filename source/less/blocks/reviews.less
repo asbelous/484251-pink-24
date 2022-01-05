@@ -68,3 +68,29 @@
     order: 2;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    margin-top: 187px;
+    padding-top: 0;
+  }
+
+  .reviews__list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 940px;
+    margin: 0 auto;
+
+    &::before {
+      content: url("../img/quotes.svg");
+      position: absolute;
+      top: -105px;
+      left: 430px;
+      width: 79px;
+      height: 63px;
+    }
+  }
+
+
+}

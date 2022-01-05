@@ -30,6 +30,10 @@
   }
 }
 
+.slider__button {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .slider__toggles--price {
     display: none;
@@ -39,5 +43,30 @@
 @media (min-width: @desktop-width) {
   .slider__toggles--reviews {
     display: none;
+  }
+
+  .slider__button {
+    display: block;
+    width: 22px;
+    height: 41px;
+    margin-top: 22px;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+
+    &--left {
+      margin-right: auto;
+    }
+
+    &--right {
+      margin-left: auto;
+    }
   }
 }

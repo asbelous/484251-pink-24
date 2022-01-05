@@ -6,7 +6,6 @@
 
 .price__wrapper {
   width: 1120px;
-  // width: 100%;
   margin: 0 auto;
 }
 
@@ -24,7 +23,24 @@
   &--opacity {
     opacity: 0;
   }
+
+  &--hit {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &--hit::before {
+    content: "хит";
+    position: absolute;
+    display: block;
+    width: 105px;
+    color: @white;
+    background-color: @pink;
+    font-weight: 300;
+    transform: translate(-25px) rotate(-45deg);
+  }
 }
+
 
 .price__name {
   font-weight: 700;
@@ -91,6 +107,10 @@
   .price__tarif {
     width: 153px;
     height: 75px;
+
+    &--hit::before {
+      width: 82px;
+    }
   }
 
   .price__option {
@@ -119,6 +139,10 @@
   .price__tarif {
     width: 233px;
     height: 94px;
+
+    &--hit::before {
+      width: 105px;
+    }
   }
 
   .price__option {

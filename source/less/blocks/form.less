@@ -300,6 +300,7 @@
     order: 2;
     margin-left: 22px;
     margin-right: 22px;
+    margin-bottom: 70px;
     background-color: @white;
     border: 2px solid @gainsboro;
     border-radius: 1px;
@@ -309,6 +310,7 @@
     order: 3;
     margin-left: 22px;
     margin-right: 22px;
+    margin-bottom: 70px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 27px;
@@ -329,6 +331,7 @@
     background-color: @white;
     border: 2px solid @gainsboro;
     border-radius: 1px;
+    margin-bottom: 70px;
   }
 
   .form__emotions {
@@ -345,24 +348,27 @@
   }
 
   .form__legend {
+    width: auto;
+
     &--contacts {
       display: block;
-      width: 200px;
       margin: 0 auto;
-      margin-top: 55px;
     }
 
     &--platforms {
       margin-top: 11px;
+      margin-bottom: 39px;
       top: 0;
     }
 
     &--achievements {
       top: 0;
+      margin-bottom: 35px;
     }
 
     &--emotions {
       margin-bottom: 0;
+      margin-top: 0;
     }
   }
 
@@ -417,7 +423,8 @@
       "achievements achievements"
       "emotions emotions"
       "submit submit";
-    grid-template-rows: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .form__fio {
@@ -436,7 +443,7 @@
     }
 
     p:first-child {
-      margin-top: 16px;
+      margin-top: 10px;
     }
   }
 
@@ -447,6 +454,7 @@
     min-height: 297px;
     margin-left: 37px;
     margin-right: 130px;
+    margin-bottom: 0;
     padding: 0;
     padding-top: 39px;
 
@@ -457,12 +465,15 @@
 
   .form__contacts {
     grid-area: contacts;
+    grid-auto-flow: row;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 158px;
     margin: 0 130px;
     margin-top: 54px;
-    padding-bottom: 0;
+    padding-bottom: 15px;
+    padding-top: 51px;
 
     p {
       min-width: 371px;
@@ -480,6 +491,9 @@
     margin-top: 54px;
     padding: 0;
     padding-top: 39px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 10px;
   }
 
   .form__emotions {
@@ -500,6 +514,11 @@
     padding: 0;
   }
 
+  .form__legend--platforms {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .form__button {
     margin: 0;
   }
@@ -511,10 +530,5 @@
 
   .required {
     display: inline;
-  }
-
-  .form__legend {
-    width: auto;
-    margin: 0 auto;
   }
 }

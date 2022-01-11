@@ -67,11 +67,7 @@
   margin: 0 auto;
   margin-top: 34px;
   margin-bottom: 27px;
-  -webkit-appearance: none;
-
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-  }
+  --webkit-appearance: none;
 
   &:focus {
     outline: none;
@@ -79,14 +75,15 @@
 
   &::-ms-track {
     width: 240px;
+    height: 2px;
     cursor: pointer;
-    background: transparent;
+    background: @darkgrey;
     border-color: transparent;
     color: transparent;
   }
 
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    --webkit-appearance: none;
     border: 2px solid @pink;
     height: 14px;
     width: 14px;
@@ -138,13 +135,6 @@
   }
 
   &::-moz-range-track {
-    width: 240px;
-    height: 2px;
-    cursor: pointer;
-    background: @darkgrey;
-  }
-
-  &::-ms-track {
     width: 240px;
     height: 2px;
     cursor: pointer;

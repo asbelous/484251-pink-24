@@ -5,25 +5,25 @@
 .contacts__wrapper {
   width: 320px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .contacts__map {
   position: relative;
-  z-index: 1;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -90px;
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
     height: 123px;
-    // background-color: red;
-    background-image: url("../../img/triangle.svg");
+    background-image: url("../../img/triangle-1200.svg");
     background-repeat: no-repeat;
     background-position: center top;
-    z-index: 2;
+    z-index: 1;
   }
 }
 
@@ -139,6 +139,10 @@
   .contacts iframe {
     height: 374px;
   }
+
+  .contacts__map::before {
+    top: -55px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -177,5 +181,10 @@
 
   .contacts iframe {
     height: 502px;
+  }
+
+  .contacts__map::before {
+    top: -20px;
+    background-image: url("../../img/triangle-1439.svg");
   }
 }

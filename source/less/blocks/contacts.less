@@ -117,7 +117,7 @@
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 38px;
+    margin-top: 32px;
   }
 
   .contacts__item {
@@ -129,7 +129,7 @@
 
     &--address {
       width: 100%;
-      margin-top: 41px;
+      margin-top: 43px;
     }
 
     p {
@@ -137,12 +137,17 @@
     }
   }
 
+  .contacts__item-text + p {
+    margin-top: 4px;
+  }
+
   .contacts iframe {
-    height: 374px;
+    height: 362px;
   }
 
   .contacts__map::before {
     top: -55px;
+    background-position: center -12px;
   }
 }
 

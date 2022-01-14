@@ -1,6 +1,7 @@
 .main-nav {
   position: relative;
   width: 100%;
+  min-height: 66px;
 
   &--closed {
     .main-nav__wrapper {
@@ -111,7 +112,7 @@
   min-width: 320px;
   text-align: center;
   padding: 16px 0;
-  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
   &:last-child {
@@ -141,6 +142,11 @@
 @media (min-width: @desktop-width) {
   .main-nav {
     padding-top: 29px;
+
+    &--opened .main-nav__wrapper {
+      position: static;
+      width: 100%;
+    }
   }
 
   .main-nav--closed .main-nav__wrapper {
@@ -148,11 +154,8 @@
   }
 
   .main-nav__wrapper {
-    vertical-align: middle;
-  }
 
-  .main-nav--opened {
-    min-height: 0;
+    vertical-align: middle;
   }
 
   .main-nav__toggle {

@@ -1,7 +1,11 @@
 .price {
   padding-top: 81px;
   padding-bottom: 46px;
-  background-color: #f2f2f2;
+  // background-color: #f2f2f2;
+  background-color: @white;
+  background-image: url("../img/background-price.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .price__wrapper {
@@ -16,20 +20,39 @@
 
 .price__tarif {
   width: 280px;
-  height: 94px;
+  min-height: 94px;
   border: 2px solid #f2f2f2;
   background-color: @darkgrey;
+  overflow: hidden;
+
 
   &--opacity {
     opacity: 0;
+    border-color: transparent;
   }
 
-  &--hit {
-    position: relative;
-    overflow: hidden;
-  }
+  // &--hit {
+  //   position: relative;
+  //   overflow: hidden;
+  // }
 
-  &--hit::before {
+  // &--hit::before {
+  //   content: "хит";
+  //   position: absolute;
+  //   display: block;
+  //   width: 105px;
+  //   color: @white;
+  //   background-color: @pink;
+  //   font-weight: 300;
+  //   transform: translate(-25px) rotate(-45deg);
+  // }
+}
+
+.price__hit {
+  position: relative;
+
+
+  &::before {
     content: "хит";
     position: absolute;
     display: block;
@@ -136,6 +159,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .price {
+    background-size: 100%;
+  }
+
   .price__tarif {
     width: 233px;
     height: 94px;

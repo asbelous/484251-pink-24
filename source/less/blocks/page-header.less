@@ -11,7 +11,7 @@
   }
 
   &--opened .page-header__logo {
-    border-bottom: 1px solid #000000;
+    // border-bottom: 1px solid #000000;
     padding-top: 23px;
     padding-bottom: 17px;
   }
@@ -23,7 +23,7 @@
 
 .page-header--no-js .page-header__wrapper {
   flex-direction: column;
-  height: 69px;
+  min-height: 69px;
   background-color: @darkgrey;
   border-bottom: 1px solid #000000;
 }
@@ -90,6 +90,18 @@
 @media (min-width: @desktop-width) {
   .page-header {
     min-height: 110px;
+
+    &--no-js {
+      position: absolute;
+    }
+
+    &--no-js .page-header__wrapper,
+    &--opened .page-header__wrapper {
+      display: flex;
+      flex-direction: row;
+      min-height: 110px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
   }
 
   .page-header__wrapper {

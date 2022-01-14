@@ -7,6 +7,26 @@
   margin: 0 auto;
 }
 
+.contacts__map {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 123px;
+    // background-color: red;
+    background-image: url("../../img/triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 2;
+  }
+}
+
 
 .contacts__text {
   margin: 0;

@@ -51,32 +51,32 @@
 
 .intro__download {
   min-width: 320px;
-  padding-bottom: 33px;
+  padding-bottom: 32px;
   background-color: @sapphire;
   text-align: center;
+}
 
-  &-button {
-    width: 280px;
-    height: 55px;
-    margin-top: 28px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
-    text-align: center;
-    color: @white;
-    background-color: transparent;
-    border: 3px solid @white;
-    border-radius: 29px;
+.intro__download-button {
+  width: 280px;
+  height: 55px;
+  margin-top: 28px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: @white;
+  background-color: transparent;
+  border: 3px solid @white;
+  border-radius: 29px;
 
-    &:hover {
-      color: @pink;
-      background-color: @white;
-    }
+  &:hover {
+    color: @pink;
+    background-color: @white;
+  }
 
-    &:active {
-      color: fade(@pink, 30%);
-      background-color: @white;
-    }
+  &:active {
+    color: fade(@pink, 30%);
+    background-color: @white;
   }
 }
 
@@ -109,6 +109,11 @@
     width: 44px;
     height: 41px;
   }
+
+  &--android-logo svg,
+  &--microsoft-logo svg {
+    margin-top: -3px;
+  }
 }
 
 .intro__description {
@@ -117,15 +122,18 @@
   padding: 46px 20px;
   font-size: 14px;
   line-height: 30px;
-  background-color: @white;
   text-align: center;
+  background-color: @white;
+}
 
-  &-download {
-    margin-top: 23px;
-    font-weight: 300;
-    line-height: 24px;
-    color: @white;
-  }
+.intro__description-download {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: @white;
 }
 
 .please {

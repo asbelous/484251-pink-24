@@ -1,26 +1,37 @@
 .info {
-  background-color: @lightgrey;
+  // background-color: @lightgrey;
 }
 
 .info__header {
-  margin-top: 42px;
+  margin-top: 40px;
   background-color: @white;
-  padding-bottom: 26px;
+  // padding-bottom: 26px;
+}
+
+.info__main {
+  background-image: url("../img/background-info-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center -10px;
+  background-size: 100%;
 }
 
 .info__text {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
   color: @darkgrey;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .info__list {
   margin: 0;
-  padding-top: 10px;
+  padding-top: 66px;
   padding-bottom: 10px;
 }
 
@@ -29,7 +40,7 @@
 }
 
 .info__term {
-  margin-top: 38px;
+  margin-top: 46px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -40,7 +51,7 @@
 .info__definition {
   width: 280px;
   margin: 0 auto;
-  margin-top: 19px;
+  margin-top: 13px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -48,9 +59,14 @@
   color: @darkgrey;
 }
 
+.info__item:nth-child(2) .info__term,
+.info__item:nth-child(3) .info__term {
+  margin-top: 30px;
+}
+
 .info__image {
-  height: 277px;
-  margin-top: 48px;
+  height: 293px;
+  margin-top: 15px;
   text-align: center;
   overflow: hidden;
 

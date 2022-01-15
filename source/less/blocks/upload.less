@@ -5,7 +5,7 @@
 .upload__text {
   width: 280px;
   margin: 0 auto;
-  padding-top: 41px;
+  padding-top: 38px;
   padding-bottom: 44px;
   font-weight: 400;
   font-size: 14px;
@@ -18,7 +18,7 @@
 .upload__main {
   background-color: @lightgrey;
   padding-top: 20px;
-  padding-bottom: 41px;
+  padding-bottom: 43px;
 }
 
 .upload__photo {
@@ -30,43 +30,48 @@
 .upload__editor {
   margin-top: 42px;
 
-  &-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 194px;
-    height: 44px;
-    margin: 0 auto;
-  }
-
-  &-tool {
-    border: none;
-    background-color: transparent;
-  }
-
-  &-tool--active g {
-    opacity: 1;
-  }
-
-  &-tool--active path {
-    fill: @pink;
-  }
-
-  &-tools {
-    display: none;
-  }
-
   &--non-mobile {
     display: none;
   }
+}
+
+.upload__editor-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 203px;
+  height: 44px;
+  margin: 0 auto;
+}
+
+.upload__editor-tool {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &--active g {
+    opacity: 1;
+  }
+
+  &--active path {
+    fill: @pink;
+  }
+
+  &:last-child {
+    margin-right: 10px;
+  }
+}
+
+.upload__editor-tools {
+  display: none;
 }
 
 .upload__editor-range {
   display: block;
   height: 2px;
   margin: 0 auto;
-  margin-top: 34px;
-  margin-bottom: 27px;
+  margin-top: 38px;
+  margin-bottom: -8px;
   --webkit-appearance: none;
 
   &:focus {
@@ -85,8 +90,8 @@
   &::-webkit-slider-thumb {
     --webkit-appearance: none;
     border: 2px solid @pink;
-    height: 14px;
-    width: 14px;
+    height: 10px;
+    width: 10px;
     border-radius: 50%;
     background: @white;
     cursor: pointer;
@@ -99,8 +104,8 @@
 
   &::-moz-range-thumb {
     border: 2px solid @pink;
-    height: 14px;
-    width: 14px;
+    height: 10px;
+    width: 10px;
     border-radius: 50%;
     background: @white;
     cursor: pointer;
@@ -112,8 +117,8 @@
 
   &::-ms-thumb {
     border: 2px solid @pink;
-    height: 14px;
-    width: 14px;
+    height: 10px;
+    width: 10px;
     border-radius: 50%;
     background: @white;
     cursor: pointer;

@@ -153,7 +153,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    // margin-top: auto;
 
     p {
       order: 1;
@@ -203,6 +202,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .catalog {
+    margin-top: 20px;
+  }
+
   .catalog__link--panorama::before {
     top: 54px;
     right: 130px;
@@ -214,11 +217,30 @@
 
   .catalog__info--panorama {
     width: 940px;
+    padding: 23px 28px;
+
+    .catalog__like {
+      margin-right: 3px;
+    }
   }
 
   .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 52px;
     width: 940px;
+  }
+
+  .catalog__item {
+    min-height: 555px;
+
+    &--panorama {
+      min-height: 0;
+    }
+  }
+
+  .catalog__info {
+    padding: 24px 31px 24px 28px;
+
   }
 }

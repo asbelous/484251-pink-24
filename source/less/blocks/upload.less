@@ -319,22 +319,27 @@
     box-sizing: border-box;
   }
 
+  .upload__text {
+    padding-top: 58px;
+    padding-bottom: 70px;
+  }
+
   .upload__editor-tool {
     width: 410px;
 
     &--crop {
       background-size: 44px 44px;
-      background-position: left center;
+      background-position: 10px center;
     }
 
     &--fill {
       background-size: 48px 43px;
-      background-position: left center;
+      background-position: 10px center;
     }
 
     &--contrast {
-      background-size: 38px 38px;
-      background-position: left center;
+      background-size: 32px 32px;
+      background-position: 15px center;
     }
 
     &:last-child {
@@ -344,7 +349,7 @@
 
   .upload__editor-range {
     width: 288px;
-    margin-left: 91px;
+    margin-left: 101px;
 
     &::-webkit-slider-runnable-track {
       width: 288px;
@@ -362,6 +367,7 @@
   .upload__buttons {
     display: flex;
     justify-content: space-between;
+    padding-left: 10px;
   }
 
   .upload__button {

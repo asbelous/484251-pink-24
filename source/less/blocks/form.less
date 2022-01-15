@@ -280,11 +280,11 @@
   color: @darkgrey;
 }
 
-.pink {
+.form__pink {
   color: @pink;
 }
 
-.required {
+.form__required {
   display: none;
 }
 
@@ -466,8 +466,9 @@
       "achievements achievements"
       "emotions emotions"
       "submit submit";
-    // grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    // grid-template-rows: auto auto minmax(228px, max-content) auto auto;
+    margin-top: 75px;
   }
 
   .form__fio {
@@ -482,11 +483,11 @@
     padding-bottom: 0;
 
     p {
-      margin-top: 56px;
+      margin-top: 53px;
     }
 
     p:first-child {
-      margin-top: 10px;
+      margin-top: 13px;
     }
   }
 
@@ -495,11 +496,11 @@
     box-sizing: border-box;
     min-width: 431px;
     min-height: 297px;
-    margin-left: 37px;
+    margin-left: 32px;
     margin-right: 130px;
     margin-bottom: 0;
     padding: 0;
-    padding-top: 39px;
+    padding-top: 42px;
 
     p {
       margin-left: 14px;
@@ -512,15 +513,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 158px;
+    min-height: 122px;
     margin: 0 130px;
-    margin-top: 54px;
-    padding-bottom: 15px;
-    padding-top: 51px;
+    margin-top: 56px;
+    padding-bottom: 0;
+    padding-top: 20px;
 
     p {
-      min-width: 371px;
+      min-width: 374px;
       margin: 0;
+    }
+
+    p:last-child {
+      margin-top: 0;
     }
   }
 
@@ -529,14 +534,18 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 228px;
+    min-height: 228px;
     margin: 0 130px;
-    margin-top: 54px;
+    margin-top: 57px;
     padding: 0;
     padding-top: 39px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 10px;
+
+    p {
+      width: 258px;
+    }
   }
 
   .form__emotions {
@@ -557,9 +566,46 @@
     padding: 0;
   }
 
-  .form__legend--platforms {
-    margin-top: 0;
+  .form__legend {
+    &--achievements {
+      margin-bottom: 6px;
+    }
+
+    &--platforms {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .form__item {
+
+    &--fio {
+      margin-left: 17px;
+    }
+
+    &--contacts {
+      margin-top: 14px;
+      margin-bottom: 6px;
+    }
+  }
+
+  .form__label {
     margin-bottom: 0;
+    line-height: 14px;
+
+    &--fio {
+      margin-top: 26px;
+    }
+
+    &--platforms {
+      margin-left: 57px;
+    }
+
+    &--contacts {
+      margin-left: 17px;
+      margin-top: 12px;
+      margin-bottom: 20px;
+    }
   }
 
   .form__button {
@@ -571,7 +617,7 @@
     margin: 0;
   }
 
-  .required {
+  .form__required {
     display: inline;
   }
 }

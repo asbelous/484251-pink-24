@@ -4,7 +4,7 @@
 
 .form__fio {
   padding: 0 22px;
-  padding-bottom: 44px;
+  padding-bottom: 23px;
   border: none;
 
   p {
@@ -13,14 +13,13 @@
 }
 
 .form__achievements {
-  padding: 0 22px;
-  // padding-top: 60px;
-  padding-bottom: 44px;
+  padding: 0 20px;
+  padding-bottom: 41px;
   border: none;
 
   p {
     margin: 0;
-    padding-bottom: 47px;
+    padding-bottom: 45px;
   }
 
   p:last-child {
@@ -29,8 +28,9 @@
 }
 
 .form__contacts {
+  margin-top: 17px;
   padding: 0 22px;
-  padding-bottom: 44px;
+  padding-bottom: 22px;
   border: none;
 
   p {
@@ -45,7 +45,7 @@
 
   p {
     margin: 0;
-    padding-bottom: 38px;
+    padding-bottom: 34px;
   }
 
   p:last-child {
@@ -54,12 +54,12 @@
 }
 
 .form__emotions {
-  padding: 0 22px;
+  padding: 0 18px;
   border: none;
 }
 
 .form__submit {
-  padding: 0 22px;
+  padding: 0 18px;
   border: none;
 }
 
@@ -86,24 +86,24 @@
   &--achievements {
     position: relative;
     top: 58px;
-    margin-bottom: 99px;
+    margin-bottom: 97px;
   }
 
   &--platforms {
     position: relative;
     top: 58px;
-    margin-bottom: 95px;
+    margin-bottom: 93px;
   }
 
   &--emotions {
-    margin-top: 38px;
-    margin-bottom: 18px;
+    margin-top: 37px;
+    margin-bottom: 15px;
   }
 }
 
 .form__label {
-  margin-top: 19px;
-  margin-bottom: 7px;
+  margin-top: 16px;
+  margin-bottom: 6px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -116,9 +116,14 @@
     margin-left: 21px;
   }
 
+  &--contacts {
+    margin-top: 16px;
+  }
+
   &--achievements {
     margin: 0;
-    margin-left: 22px;
+    margin-top: -2px;
+    margin-left: -3px;
     vertical-align: top;
     font-size: 18px;
     line-height: 35px;
@@ -128,7 +133,7 @@
 
   &--platforms {
     margin: 0;
-    margin-left: 31px;
+    margin-left: -4px;
     vertical-align: top;
     font-size: 18px;
     line-height: 37px;
@@ -170,8 +175,9 @@
 
   &--emotions {
     width: 100%;
+    min-height: 201px;
     box-sizing: border-box;
-    padding: 22px 20px;
+    padding: 16px 18px;
   }
 }
 
@@ -187,7 +193,8 @@
   content: "";
   display: inline-block;
   margin-right: 22px;
-  border: 1px solid @gainsboro;
+  border: 2px solid @gainsboro;
+  background-color: @white;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
@@ -202,6 +209,7 @@
 .form__item--platforms + label::before {
   width: 37px;
   height: 37px;
+  margin-right: 29px;
   border-radius: 50%;
 }
 
@@ -230,10 +238,10 @@
 
 .form__button {
   display: block;
-  width: 276px;
-  height: 59px;
+  width: 278px;
+  height: 63px;
   margin: 0 auto;
-  margin-top: 52px;
+  margin-top: 48px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -263,7 +271,7 @@
 .form__description {
   width: 185px;
   margin: 0 auto;
-  margin-top: 36px;
+  margin-top: 34px;
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 14px;

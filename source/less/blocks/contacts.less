@@ -153,7 +153,7 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    padding-top: 65px;
+    padding-top: 58px;
   }
 
   .contacts__wrapper {
@@ -170,7 +170,8 @@
     flex-wrap: nowrap;
     min-width: 880px;
     margin: 0 160px;
-    margin-top: 46px;
+    margin-top: 40px;
+    padding-bottom: 16px;
   }
 
   .contacts__item {
@@ -185,12 +186,20 @@
     }
   }
 
+  .contacts__item-text + p {
+    margin-top: 21px;
+  }
+
+  .contacts__name:last-child {
+    margin-top: 21px;
+  }
+
   .contacts iframe {
-    height: 502px;
+    height: 505px;
   }
 
   .contacts__map::before {
-    top: -20px;
+    top: -5px;
     background-image: url("../../img/triangle-1439.svg");
   }
 }

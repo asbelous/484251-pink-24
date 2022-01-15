@@ -122,7 +122,6 @@
   .price__tarif {
     width: 153px;
     height: 75px;
-    // padding: 0;
 
     &--hit::before {
       width: 82px;
@@ -155,7 +154,18 @@
 
 @media (min-width: @desktop-width) {
   .price {
+    background-image: url("../img/background-price-desktop.svg");
+    background-position: center 32px;
     background-size: 100%;
+  }
+
+  .price__wrapper {
+    margin-top: 108px;
+  }
+
+  .price__table {
+    width: 940px;
+    margin-bottom: 46px;
   }
 
   .price__tarif {

@@ -22,6 +22,7 @@
 
 .price__tarif {
   width: 273px;
+  min-height: 94px;
   border: 2px solid @lightgrey;
   background-color: @darkgrey;
   overflow: hidden;
@@ -31,11 +32,23 @@
     opacity: 0;
     border-color: transparent;
   }
+
+  &--hit .price__name {
+    // margin-top: 10px;
+  }
+}
+
+.price__order {
+  position: relative;
+  min-height: 96px;
 }
 
 .price__hit {
   position: relative;
   min-height: 96px;
+  // padding-top: 10px;
+
+
 
   &::before {
     content: "хит";
@@ -51,8 +64,9 @@
   }
 }
 
-
 .price__name {
+  display: inline-block;
+  margin-top: 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -61,6 +75,7 @@
 }
 
 .price__value {
+  display: inline-block;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
@@ -121,11 +136,16 @@
 
   .price__tarif {
     width: 153px;
-    height: 75px;
+    min-height: 75px;
 
     &--hit::before {
       width: 82px;
     }
+  }
+
+  .price__hit,
+  .price__order {
+    min-height: 75px;
   }
 
   .price__option {
@@ -133,6 +153,7 @@
     min-height: 45px;
     padding: 0;
     padding-left: 13px;
+    padding-top: 8px;
 
     &-text {
       display: none;
@@ -170,7 +191,7 @@
 
   .price__tarif {
     width: 233px;
-    height: 94px;
+    min-height: 94px;
 
     &--hit::before {
       width: 105px;

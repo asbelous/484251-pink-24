@@ -130,10 +130,6 @@
   .price__tarif {
     width: 153px;
     min-height: 75px;
-
-    &--hit::before {
-      width: 82px;
-    }
   }
 
   .price__hit,
@@ -142,17 +138,17 @@
   }
 
   .price__hit::before {
+    width: 82px;
     height: 20px;
     font-size: 16px;
     line-height: 14px;
-    transform: translate(-33px,15px) rotate(-45deg);
+    transform: translate(-33px, 15px) rotate(-45deg);
   }
 
   .price__option {
     width: 140px;
     min-height: 45px;
     padding: 0;
-
 
     &--first-row {
       padding-left: 14px;
@@ -180,10 +176,6 @@
       margin-right: 0;
     }
   }
-
-//   .price__name {
-//     margin-top: 5px;
-//   }
 }
 
 @media (min-width: @desktop-width) {
@@ -198,21 +190,39 @@
   }
 
   .price__table {
-    width: 940px;
+    width: 946px;
     margin-bottom: 46px;
   }
 
-  .price__tarif {
+  .price__order,
+  .price__hit {
     width: 233px;
     min-height: 94px;
+  }
 
-    &--hit::before {
-      width: 105px;
-    }
+  .price__hit::before {
+    width: 105px;
+    height: 24px;
+    transform: translate(-25px, 15px) rotate(-45deg);
+  }
+
+  .price__name {
+    margin-top: 13px;
+  }
+
+  .price__value {
+    font-size: 24px;
+    line-height: 35px;
   }
 
   .price__option {
     width: 233px;
     height: 59px;
+
+    &--first-row {
+      padding: 0;
+      padding-left: 24px;
+      font-size: 18px;
+    }
   }
 }

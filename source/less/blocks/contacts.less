@@ -28,7 +28,6 @@
   }
 }
 
-
 .contacts__text {
   margin: 0;
   font-weight: 300;
@@ -68,7 +67,6 @@
     margin-top: 21px;
   }
 }
-
 
 .contacts__name {
   font-weight: 300;
@@ -168,7 +166,7 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    padding-top: 58px;
+    padding-top: 61px;
   }
 
   .contacts__wrapper {
@@ -191,6 +189,10 @@
 
   .contacts__item {
     min-width: 245px;
+
+    &--phone {
+      padding-left: 0;
+    }
 
     &--email {
       order: 3;
@@ -215,6 +217,6 @@
 
   .contacts__map::before {
     top: -5px;
-    background-image: url("../../img/triangle-1439.svg");
+    background-image: url("../img/triangle-1439.svg");
   }
 }

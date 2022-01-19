@@ -289,7 +289,8 @@
 }
 
 .form__modal {
-  display: block;
+  // display: block;
+  display: none;
   width: 320px;
   padding-top: 38px;
   border-radius: 1px;
@@ -394,19 +395,24 @@
     order: 4;
     min-height: 515px;
     margin-left: 22px;
-    margin-top: 59px;
+    margin-top: 60px;
     margin-right: 22px;
-    padding-left: 59px;
+    padding-left: 0;
+    padding-right: 0;
     background-color: @white;
     border: 2px solid @gainsboro;
     border-radius: 1px;
+
+    p {
+      margin-left: 59px;
+    }
   }
 
   .form__emotions {
     order: 5;
     min-height: 224px;
     margin-left: 22px;
-    margin-top: 59px;
+    margin-top: 60px;
     margin-right: 22px;
     padding: 36px 56px;
     border: 2px solid @gainsboro;
@@ -606,7 +612,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 1888px;
+    min-height: 0;
     margin: 0 130px;
     margin-top: 57px;
     padding: 0;
@@ -620,9 +626,31 @@
       width: 258px;
       min-height: 35px;
       margin: 0;
-      padding: 0;
-      border: none;
     }
+
+    // p:first-child {
+    //   order: 2;
+    // }
+
+    // p:nth-child(2) {
+    //   order: 5;
+    // }
+
+    // p:nth-child(3) {
+    //   order: 2;
+    // }
+
+    // p:nth-child(4) {
+    //   order: 3;
+    // }
+
+    // p:nth-child(5) {
+    //   order: 4;
+    // }
+
+    // p:last-child {
+    //   order: 2;
+    // }
   }
 
   .form__emotions {

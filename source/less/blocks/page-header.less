@@ -11,9 +11,12 @@
   }
 
   &--opened .page-header__logo {
-    // border-bottom: 1px solid #000000;
     padding-top: 23px;
     padding-bottom: 17px;
+  }
+
+  &--no-js .page-header__logo {
+    min-height: 46px;
   }
 }
 
@@ -64,6 +67,10 @@
       padding-bottom: 20px;
       border: none;
     }
+  }
+
+  .page-header--no-js .page-header__logo {
+    min-height: 59px;
   }
 
   .page-header__logo {

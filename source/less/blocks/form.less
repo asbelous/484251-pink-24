@@ -17,6 +17,11 @@
   padding-bottom: 41px;
   border: none;
 
+  div:nth-child(2),
+  div:nth-child(3) {
+    padding-bottom: 45px;
+  }
+
   p {
     margin: 0;
     padding-bottom: 45px;
@@ -289,20 +294,31 @@
 }
 
 .form__modal {
-  // display: block;
   display: none;
+  position: fixed;
   width: 320px;
   padding-top: 38px;
+  background-color: @white;
   border-radius: 1px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
+  &--opened {
+    display: block; //Открытое состояние
+  }
+
   &--wrong {
     padding-bottom: 52px;
+    bottom: 156px;
   }
 
   &--wrong .form__modal-text {
     width: 280px;
-    margin-bottom: 45px;
+    margin-top: 25px;
+    margin-bottom: 41px;
+  }
+
+  &--sent {
+    bottom: 156px;
   }
 
   &--sent .form__modal-button {
@@ -313,8 +329,9 @@
   }
 
   &--sent .form__modal-text {
-    width: 266px;
-    margin-bottom: 36px;
+    width: 272px;
+    margin-top: 25px;
+    margin-bottom: 33px;
   }
 }
 
@@ -327,13 +344,14 @@
 
 .form__modal-text {
   margin: 0 auto;
-  margin-top: 17px;
+  font-size: 14px;
+  line-height: 24px;
   text-align: center;
 }
 
 .form__modal-button .form__button {
   width: 276px;
-  min-height: 59px;
+  min-height: 62px;
   margin: 0 auto;
 }
 
@@ -511,13 +529,30 @@
   }
 
   .form__modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     width: 460px;
     margin: 0 auto;
     padding-top: 44px;
 
+    &--opened {
+      display: block;
+    }
+
     &--wrong {
       padding-bottom: 54px;
+      bottom: 220px;
     }
+
+    &--sent {
+      bottom: 116px;
+    }
+  }
+
+  .form__modal--wrong .form__modal-text {
+    margin-bottom: 33px;
   }
 
   .form__modal-header {
@@ -528,10 +563,19 @@
   }
 
   .form__modal-text {
+    width: 320px;
     margin-top: 29px;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .form__modal--sent .form__modal-text {
     width: 320px;
+    margin-bottom: 29px;
+  }
+
+  .form__modal-button .form__button {
+    width: 296px;
   }
 }
 
@@ -709,14 +753,19 @@
   }
 
   .form__modal {
+    position: fixed;
     width: 780px;
+    left: 50%;
+    transform: translateX(-50%);
 
     &--wrong {
       padding-bottom: 0;
+      bottom: 300px;
     }
 
     &--wrong .form__modal-text {
       width: 370px;
+      margin-bottom: 60px;
     }
 
     &--wrong .form__modal-button {
@@ -727,11 +776,20 @@
     }
 
     &--sent .form__modal-text {
-      width: 370px;
+      width: 391px;
+      margin-bottom: 35px;
+    }
+
+    &--sent .form__modal-button .form__button {
+      width: 456px;
     }
   }
 
   .form__modal-header {
     width: 396px;
+  }
+
+  .form__modal-button .form__button {
+    width: 296px;
   }
 }

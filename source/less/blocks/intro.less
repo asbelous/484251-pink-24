@@ -21,6 +21,7 @@
 
   &--inner {
     min-height: 171px;
+    background-color: @darkgrey;
     background-image: url("../img/backs/back-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -55,20 +56,23 @@
 
 .intro__download {
   min-width: 320px;
+  padding-top: 28px;
   padding-bottom: 32px;
   background-color: @sapphire;
   text-align: center;
 }
 
 .intro__download-button {
+  display: block;
   width: 280px;
-  height: 55px;
-  margin-top: 28px;
+  height: 50px;
+  margin: 0 auto;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 50px;
   text-align: center;
   color: @white;
+  text-decoration: none;
   background-color: transparent;
   border: 3px solid @white;
   border-radius: 29px;
@@ -182,7 +186,6 @@
       background-image: url("../img/backs/back-tablet.jpg");
       background-repeat: no-repeat;
       background-position: center top;
-      background-color: @white;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
@@ -215,6 +218,7 @@
 
   .intro__download {
     background: none;
+    padding-top: 0;
     padding-bottom: 114px;
   }
 
@@ -308,8 +312,7 @@
 
   .intro__download-button {
     margin-top: 37px;
-    font-size: 23px;
-    line-height: 23px;
+    font-size: 21px;
   }
 
   .intro__available-platforms {

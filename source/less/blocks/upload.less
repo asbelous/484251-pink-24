@@ -67,7 +67,9 @@
 }
 
 .upload__editor-range {
-  --webkit-appearance: none;
+  /*stylelint-disable*/
+  -webkit-appearance: none;
+  /*stylelint-enable*/
   display: block;
   height: 2px;
   margin: 0 auto;
@@ -88,14 +90,16 @@
   }
 
   &::-webkit-slider-thumb {
-    --webkit-appearance: none;
+    /*stylelint-disable*/
+    -webkit-appearance: none;
+    /*stylelint-enable*/
     border: 2px solid @pink;
-    height: 10px;
-    width: 10px;
+    height: 14px;
+    width: 14px;
     border-radius: 50%;
-    background: @white;
+    background-color: @white;
     cursor: pointer;
-    margin-top: -14px;
+    margin-top: -7px;
   }
 
   &:focus::-webkit-slider-thumb {
